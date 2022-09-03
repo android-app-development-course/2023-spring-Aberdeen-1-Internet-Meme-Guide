@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/newsNaviBtn"
+        android:enabled="true"
+
+        android:title="新闻"
+        />
+    <item
+        android:id="@+id/passageNaviBtn"
+        android:enabled="true"
+
+        android:title="帖子"
+        />
+    <item
+        android:enabled="false"
+        android:title=""
+        />
+    <item
+        android:id="@+id/postNaviBtn"
+        android:enabled="true"
+        android:title="动态"
+
+        />
+    <item
+        android:id="@+id/myNaviBtn"
+        android:enabled="true"
+
+        android:title="我的"
+        />
+</menu>
