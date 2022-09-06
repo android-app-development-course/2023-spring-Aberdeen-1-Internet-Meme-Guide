@@ -14,23 +14,22 @@
         app:layout_constraintStart_toStartOf="parent">
 
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/mainNavi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:labelVisibilityMode="labeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_navigation">
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/mainNavi"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/postNaviBtn"
-            app:srcCompat="@drawable/icons8_plus"
-            android:layout_gravity="center"
-            />
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_navigation">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/postNaviBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/icons8_plus" />
         </com.google.android.material.bottomnavigation.BottomNavigationView>
     </FrameLayout>
 
