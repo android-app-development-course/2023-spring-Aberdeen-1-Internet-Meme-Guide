@@ -21,9 +21,6 @@
         android:theme="@style/Theme.ForumApp"
         tools:targetApi="31">
         <activity
-            android:name=".NewsActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

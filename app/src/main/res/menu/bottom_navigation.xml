@@ -17,7 +17,7 @@
         android:title=""
         />
     <item
-        android:id="@+id/postNaviBtn"
+        android:id="@+id/insNaviBtn"
         android:enabled="true"
         android:title="动态"
         android:icon="@drawable/icons8__ins"
