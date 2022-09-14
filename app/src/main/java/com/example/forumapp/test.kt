@@ -3,16 +3,28 @@ package com.example.forumapp
 import android.os.Bundle
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class test : AppCompatActivity() {
     private val newsList = ArrayList<NewsUnit>()
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//        setContentView(R.layout.test)
+//        initNews() // 初始化新闻数据
+//        val adapter = NewsAdapter(this, R.layout.news_short_layout, newsList)
+//        val listView = findViewById<ListView>(R.id.test)
+//        listView.adapter = adapter
+//    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.test)
-        initNews() // 初始化新闻数据
-        val adapter = NewsAdapter(this, R.layout.news_short_layout, newsList)
-        val listView = findViewById<ListView>(R.id.test)
-        listView.adapter = adapter
+        setContentView(R.layout.news_recycler)
+        initNews() // 初始化数据
+        val layoutManager = LinearLayoutManager(this)
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+        recyclerView.layoutManager = layoutManager
+        val adapter = NewsAdapter(newsList)
+        recyclerView.adapter = adapter
     }
 
     private fun initNews() {
