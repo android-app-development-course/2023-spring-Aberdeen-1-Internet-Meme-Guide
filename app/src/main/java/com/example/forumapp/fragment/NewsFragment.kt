@@ -1,11 +1,11 @@
 package com.example.forumapp.fragment
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.*
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -43,25 +43,6 @@ class NewsFragment: Fragment() {
 }
 
 //适配器
-//class NewsAdapter(context: FragmentActivity, val resourceId: Int, data: List<NewsUnit>) :
-//    ArrayAdapter<NewsUnit>(context, resourceId, data) {
-//    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-//        val view = LayoutInflater.from(context).inflate(resourceId, parent, false)
-//        val newsImage: ImageView = view.findViewById(R.id.newsPicture)
-//        val newsTitle: TextView = view.findViewById(R.id.newsTitle)
-//        val newsTime: TextView = view.findViewById(R.id.newsTime)
-//        val newsAuthor: TextView = view.findViewById(R.id.newsAuthor)
-//        val news = getItem(position) // 获取当前项的news实例
-//        if (news != null) {
-//            newsImage.setImageResource(news.imageId)
-//            newsTitle.text = news.title
-//            newsTime.text = news.time
-//            newsAuthor.text = news.author
-//        }
-//        return view
-//    }
-//}
-
 class NewsAdapter (val newsList: List<NewsUnit>):
     RecyclerView.Adapter<NewsAdapter.ViewHolder>(){
 
