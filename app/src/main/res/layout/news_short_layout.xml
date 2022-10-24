@@ -8,6 +8,10 @@
         android:id="@+id/newsPicture"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:paddingTop="10dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+
         />
 
     <TextView

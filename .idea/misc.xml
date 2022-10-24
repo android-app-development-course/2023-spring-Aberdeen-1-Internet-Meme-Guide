@@ -3,8 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/1xiangmu/unbengable/app/src/main/res/drawable/button_drawable.xml" value="0.2205" />
         <entry key="..\:/1xiangmu/unbengable/app/src/main/res/layout/activity_login.xml" value="0.2869791666666667" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/activity_main.xml" value="0.264" />
+>>>>>>> 0d10e0b7f80b4e99d0ea23e0ec6e2cd7df446cde
+        <entry key="..\:/GitClone/unbengable/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/GitClone/unbengable/app/src/main/res/layout/activity_news.xml" value="0.264" />
+        <entry key="..\:/GitClone/unbengable/app/src/main/res/layout/fragment1.xml" value="0.2484375" />
+        <entry key="..\:/GitClone/unbengable/app/src/main/res/layout/fragment_scrolling.xml" value="0.24947916666666667" />
+        <entry key="..\:/GitClone/unbengable/app/src/main/res/layout/login.xml" value="0.22282608695652173" />
+        <entry key="..\:/GitClone/unbengable/app/src/main/res/layout/news_short_layout.xml" value="0.24947916666666667" />
+        <entry key="..\:/GitClone/unbengable/app/src/main/res/menu/bottom_navigation.xml" value="0.24947916666666667" />
+<<<<<<< HEAD
+        <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/activity_main.xml" value="0.24947916666666667" />
+        <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/activity_news.xml" value="0.24947916666666667" />
+        <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/news_short_layout.xml" value="0.536" />
+=======
+=======
+>>>>>>> 0f96ee7ecc5e1ed7e382c2981ad2c794fccff71c
+>>>>>>> 90ca6d2ff17beb07e84fd2de656675f4a6649ec9
         <entry key="..\:/1xiangmu/unbengable/app/src/main/res/layout/activity_main.xml" value="0.25181159420289856" />
         <entry key="..\:/1xiangmu/unbengable/app/src/main/res/layout/activity_news.xml" value="0.21603260869565216" />
         <entry key="..\:/1xiangmu/unbengable/app/src/main/res/layout/daohang.xml" value="0.20244565217391305" />
@@ -30,7 +52,13 @@
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/login.xml" value="0.264" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/news_recycler.xml" value="0.24947916666666667" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/news_short_layout.xml" value="0.4" />
+<<<<<<< HEAD
+>>>>>>> 936ade99e1134570ea241fe6dc65bf42ec430695
+>>>>>>> 0d10e0b7f80b4e99d0ea23e0ec6e2cd7df446cde
+=======
+>>>>>>> 0f96ee7ecc5e1ed7e382c2981ad2c794fccff71c
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/oplist_item.xml" value="0.24947916666666667" />
+        <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/post_short_layout.xml" value="0.6" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/test.xml" value="0.24947916666666667" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/menu/bottom_navigation.xml" value="0.24947916666666667" />
       </map>
