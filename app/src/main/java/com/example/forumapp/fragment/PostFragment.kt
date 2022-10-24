@@ -8,7 +8,6 @@ import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.forumapp.NewsUnit
 import com.example.forumapp.R
 import com.example.forumapp.models.Post
 
@@ -57,7 +56,7 @@ class PostUnitAdapter(val postList: List<Post>):
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val view=LayoutInflater.from(parent.context)
-            .inflate(R.layout.post_short_layout,parent,false)
+            .inflate(R.layout.item_post_layout,parent,false)
 //        val viewHolder=ViewHolder(view)
 //        viewHolder.itemView.setOnClickListener{
 //            val position=viewHolder.adapterPosition
