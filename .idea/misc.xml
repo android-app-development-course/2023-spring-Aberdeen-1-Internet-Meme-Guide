@@ -24,10 +24,11 @@
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/fragment_news.xml" value="0.24947916666666667" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/fragment_post.xml" value="0.264" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/login.xml" value="0.264" />
+        <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/news_fragment_test.xml" value="0.24947916666666667" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/news_recycler.xml" value="0.24947916666666667" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/news_short_layout.xml" value="0.4" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/oplist_item.xml" value="0.24947916666666667" />
-        <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/post_short_layout.xml" value="0.6" />
+        <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/post_short_layout.xml" value="0.4" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/test.xml" value="0.24947916666666667" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/menu/bottom_navigation.xml" value="0.24947916666666667" />
       </map>
@@ -38,5 +39,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.24947916666666667" />
+      </ProjectState>
+    </option>
   </component>
 </project>
