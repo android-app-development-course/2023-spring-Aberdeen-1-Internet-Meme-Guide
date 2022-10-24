@@ -20,7 +20,7 @@ class PostFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view=inflater.inflate(R.layout.fragment_news, container, false)
+        val view=inflater.inflate(R.layout.fragment_post, container, false)
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerViewForPost)
         initNews()  // 添加新闻
         val layoutManager = LinearLayoutManager(activity)
