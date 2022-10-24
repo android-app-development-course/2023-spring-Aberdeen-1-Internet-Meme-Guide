@@ -65,24 +65,7 @@ class LoginFragment : Fragment() {
     }
     private fun login(loginPass: String, passWord: String) {
         //TODO 处理登录校验与保存context
-        //使用okhtttputils将phone和password发送给服务器
-        OkHttpUtils.post().url(LoginURL).addParams("phone", phone)
-            .addParams("password", pwd).build().execute(object : StringCallback() {
-                //成功回调
-                override fun onResponse(response: String?) {
-                    Log.e("丹爷", "---response---" + response)
-                    var model = GsonUtils.jsonToBean<Responses.Login>(response, Responses.Login::class.java)
 
-                    //登录成功
-                    if (model.code == "success") {
-                        startActivity(Intent(this@LoginActivity, MainActivity::class.java))
-                    }
-                }
-                //失败回调
-                override fun onError(p0: Request?, e: Exception?) {
-                    //请求失败处理回调信息
-                    Log.e("丹爷", "---error---" + e!!.message)
-                }
 
             })
     }
