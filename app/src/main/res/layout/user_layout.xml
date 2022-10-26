@@ -30,8 +30,8 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="683dp"
-                android:layout_height="460dp"
+                android:layout_width="372dp"
+                android:layout_height="204dp"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:src="@drawable/avatar" />
