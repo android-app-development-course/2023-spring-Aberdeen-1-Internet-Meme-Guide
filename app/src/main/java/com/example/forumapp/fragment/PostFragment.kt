@@ -49,7 +49,7 @@ class PostUnitAdapter(val postList: List<Post>):
     inner class ViewHolder(view: View):RecyclerView.ViewHolder(view){
         val postTitle:EditText = view.findViewById(R.id.postTitle)
         val postPicture:ImageView = view.findViewById(R.id.postPicture)
-        val postContent:EditText = view.findViewById(R.id.postContent)
+        val postContent:EditText = view.findViewById(R.id.postShortCut)
         val postTime:EditText = view.findViewById(R.id.postTime)
 
     }

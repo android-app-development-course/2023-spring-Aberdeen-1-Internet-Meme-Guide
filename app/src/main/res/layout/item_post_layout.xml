@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout1">
 
         <EditText
-            android:id="@+id/postContent"
+            android:id="@+id/postShortCut"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@null"
