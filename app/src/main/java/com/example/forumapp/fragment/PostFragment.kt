@@ -8,7 +8,6 @@ import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.forumapp.NewsUnit
 import com.example.forumapp.R
 import com.example.forumapp.models.Post
 
@@ -20,7 +19,7 @@ class PostFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view=inflater.inflate(R.layout.fragment_news, container, false)
+        val view=inflater.inflate(R.layout.fragment_post, container, false)
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerViewForPost)
         initNews()  // 添加新闻
         val layoutManager = LinearLayoutManager(activity)
@@ -50,14 +49,14 @@ class PostUnitAdapter(val postList: List<Post>):
     inner class ViewHolder(view: View):RecyclerView.ViewHolder(view){
         val postTitle:EditText = view.findViewById(R.id.postTitle)
         val postPicture:ImageView = view.findViewById(R.id.postPicture)
-        val postContent:EditText = view.findViewById(R.id.postContent)
+        val postContent:EditText = view.findViewById(R.id.postShortCut)
         val postTime:EditText = view.findViewById(R.id.postTime)
 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val view=LayoutInflater.from(parent.context)
-            .inflate(R.layout.post_short_layout,parent,false)
+            .inflate(R.layout.item_post_layout,parent,false)
 //        val viewHolder=ViewHolder(view)
 //        viewHolder.itemView.setOnClickListener{
 //            val position=viewHolder.adapterPosition

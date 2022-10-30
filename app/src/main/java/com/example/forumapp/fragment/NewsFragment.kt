@@ -55,7 +55,7 @@ class NewsAdapter (val newsList: List<NewsUnit>):
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view=LayoutInflater.from(parent.context)
-            .inflate(R.layout.news_short_layout,parent,false)
+            .inflate(R.layout.item_news_layout,parent,false)
 //        val viewHolder=ViewHolder(view)
 //        viewHolder.itemView.setOnClickListener{
 //            val position=viewHolder.adapterPosition

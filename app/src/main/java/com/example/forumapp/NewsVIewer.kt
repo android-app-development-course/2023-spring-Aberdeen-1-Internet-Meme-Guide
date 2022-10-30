@@ -1,12 +1,10 @@
 package com.example.forumapp
 
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 
 class NewsUnit(val title:String,val imageId:Int, val author:String, val time:String)
@@ -21,7 +19,7 @@ class NewsAdapter(val newsList: List<NewsUnit>) :
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.news_short_layout, parent, false)
+            .inflate(R.layout.item_news_layout, parent, false)
         return ViewHolder(view)
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
