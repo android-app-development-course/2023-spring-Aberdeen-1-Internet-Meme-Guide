@@ -1,5 +1,6 @@
 package com.example.forumapp.fragment
 
+import android.app.Fragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -67,10 +68,10 @@ class LoginFragment : Fragment() {
         //TODO 处理登录校验与保存context
 
 
-            })
+            }
     }
 
-    }
+
 
 
 
