@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_reply"
+    app:startDestination="@id/fragment_article">
+    <fragment
+        android:id="@+id/fragment_article"
+        android:name="com.example.forumapp.fragment.fragment_article"
+        android:label="fragment_article">
+        <action
+            android:id="@+id/action_fragment_article2_to_replyFragment2"
+            app:destination="@id/replyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/replyFragment"
+        android:name="com.example.forumapp.fragment.ReplyFragment"
+        android:label="ReplyFragment" />
+</navigation>
