@@ -8,17 +8,27 @@
     android:orientation="vertical">
 
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:id="@+id/appBarLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@null"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/postTopBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@null"
+        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </com.google.android.material.appbar.AppBarLayout>
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/icons8__back"
+        app:title="Title" />
 
     <ScrollView
         android:id="@+id/postContent"
@@ -28,17 +38,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toBottomOf="@+id/postTopBar">
 
-
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/postTopBar"
+        <com.rex.editor.view.RichEditorNew
+            android:id="@+id/richText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            app:navigationIcon="@drawable/icons8__back"
-            app:title="Title" />
+            android:layout_height="wrap_content" />
+
     </ScrollView>
 
     <Button
@@ -75,7 +81,7 @@
 
 
         android:id="@+id/constraintLayout2"
-        android:layout_width="442dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/collectbutton"
         app:layout_constraintStart_toStartOf="parent">
