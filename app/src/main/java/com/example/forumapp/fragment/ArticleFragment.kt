@@ -24,8 +24,11 @@ class fragment_article : Fragment() {
         val view=inflater.inflate(R.layout.fragment_article, container, false)
         val replyFragment = view.findViewById<ConstraintLayout>(R.id.constraintLayout2)
         val replyBtn = view.findViewById<Button>(R.id.replybutton)
-        replyBtn.visibility = View.INVISIBLE
-        replyFragment.visibility = View.VISIBLE
+        replyBtn.setOnClickListener {
+            replyBtn.visibility = View.INVISIBLE
+            replyFragment.visibility = View.VISIBLE
+        }
+
         // Inflate the layout for this fragment
         return view
     }
