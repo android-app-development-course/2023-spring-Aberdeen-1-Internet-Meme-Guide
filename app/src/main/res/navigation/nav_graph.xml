@@ -9,13 +9,13 @@
         android:name="com.example.forumapp.fragment.MainFragment"
         tools:layout="@layout/fragment_main">
         <action
-            android:id="@+id/action_fragment_main_to_loginActivity2"
-            app:destination="@id/loginActivity2" />
+            android:id="@+id/action_fragment_main_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
-    <activity
-        android:id="@+id/loginActivity2"
-        android:name="com.example.forumapp.LoginActivity2"
-        android:label="LoginActivity2"
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.forumapp.fragment.LoginFragment"
+        android:label="LoginFragment"
         tools:layout="@layout/login"/>
 
 

@@ -48,6 +48,7 @@ class MainFragment:NavHostFragment() {
         val postBtn=view.findViewById<FloatingActionButton>(R.id.postNaviBtn)
         postBtn.setOnClickListener{
             // TODO
+            replaceComponent(ArticleFragment())
         }
         return view
     }

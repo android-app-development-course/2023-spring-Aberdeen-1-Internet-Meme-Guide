@@ -5,7 +5,10 @@
     tools:ignore="ExtraText">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
 
     <application
         android:name=".ForumApp"
@@ -17,10 +20,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ForumApp"
-        tools:targetApi="31">
-        <activity
-            android:name=".fragment.LoginFragment"
-            android:exported="false" />
+        tools:targetApi="31"
+        android:requestLegacyExternalStorage="true" >
         <activity
             android:name=".LoginActivity2"
             android:exported="false" />
@@ -33,9 +34,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".test"
-            android:exported="true" />
     </application>
 
 </manifest>
