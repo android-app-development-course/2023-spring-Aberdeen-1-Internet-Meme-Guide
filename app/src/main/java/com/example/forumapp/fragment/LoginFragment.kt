@@ -14,6 +14,7 @@ import java.io.IOException
 import java.io.InputStreamReader
 import java.net.Socket
 
+
 //之前的activity
 
 //class LoginActivity : AppCompatActivity() {
