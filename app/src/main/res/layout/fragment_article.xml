@@ -19,6 +19,16 @@
 
 <!--    </com.google.android.material.appbar.AppBarLayout>-->
 
+    <com.rex.editor.view.RichEditorNew
+        android:id="@+id/richText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/collectbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postTopBar"
+        android:layout_marginTop="60dp"/>
+
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/postTopBar"
         android:layout_width="match_parent"
@@ -30,22 +40,8 @@
         app:navigationIcon="@drawable/icons8__back"
         app:title="Title" />
 
-    <ScrollView
-        android:id="@+id/postContent"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/postTopBar">
 
-        <com.rex.editor.view.RichEditorNew
-            android:id="@+id/richText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
-    </ScrollView>
 
     <Button
         android:id="@+id/likebutton"
@@ -92,7 +88,8 @@
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="5dp">
+            tools:layout_editor_absoluteX="5dp"
+            android:visibility="invisible">
 
             <Button
                 android:id="@+id/dialog_comment_bt"
