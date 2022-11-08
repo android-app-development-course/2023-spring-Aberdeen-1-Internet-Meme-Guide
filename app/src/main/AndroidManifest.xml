@@ -26,6 +26,9 @@
             android:name=".LoginActivity2"
             android:exported="false" />
         <activity
+            android:name=".fragment.ArticleActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

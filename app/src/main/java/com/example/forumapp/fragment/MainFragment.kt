@@ -1,5 +1,6 @@
 package com.example.forumapp.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -48,7 +49,9 @@ class MainFragment:NavHostFragment() {
         val postBtn=view.findViewById<FloatingActionButton>(R.id.postNaviBtn)
         postBtn.setOnClickListener{
             // TODO
-            replaceComponent(ArticleFragment())
+            val intent = Intent(activity, ArticleActivity::class.java)
+            startActivity(intent)
+
         }
         return view
     }
