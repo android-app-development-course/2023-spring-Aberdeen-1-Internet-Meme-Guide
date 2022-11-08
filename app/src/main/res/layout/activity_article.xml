@@ -105,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:background="#D8D8D8"
                 android:text="发布"
-                android:textColor="@android:color/white"
+                android:textColor="#795548"
                 android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

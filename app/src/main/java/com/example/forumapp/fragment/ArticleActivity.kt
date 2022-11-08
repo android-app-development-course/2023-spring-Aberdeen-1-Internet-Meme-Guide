@@ -21,7 +21,6 @@ class ArticleActivity() : Activity() {
         val replyFragment = findViewById<ConstraintLayout>(R.id.relativeLayout)
         val replyBtn = findViewById<Button>(R.id.replybutton)
         replyBtn.setOnClickListener {
-            replyBtn.visibility = View.INVISIBLE
             replyFragment.visibility = View.VISIBLE
         }
     }
