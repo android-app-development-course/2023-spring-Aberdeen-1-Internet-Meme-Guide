@@ -1,17 +1,15 @@
 package com.example.forumapp.fragment
 
 import android.app.Activity
-import android.content.Context
 import android.os.Bundle
-import android.os.Parcel
-import android.os.Parcelable
-import android.util.AttributeSet
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.forumapp.R
+import com.example.forumapp.models.Article
+import com.example.forumapp.models.NewsUnit
+import com.google.android.material.appbar.MaterialToolbar
+import jp.wasabeef.richeditor.RichEditor
 
 
 class ArticleActivity() : Activity() {
@@ -23,6 +21,35 @@ class ArticleActivity() : Activity() {
         replyBtn.setOnClickListener {
             replyFragment.visibility = View.VISIBLE
         }
+        val topAppBar = findViewById<MaterialToolbar>(R.id.postTopBar)
+        topAppBar.setNavigationOnClickListener {
+            finish()
+        }
+
+        fitContent()    // 获取文字信息并填入页面
+
+    }
+
+    private fun fitContent(){
+        val richTextContent = findViewById<RichEditor>(R.id.richText)
+        val type = intent.getStringExtra("type")
+        when(type){
+            "news" -> {
+                val newsObj = intent.getSerializableExtra("obj")
+                if (newsObj is NewsUnit){
+                    richTextContent.html = newsObj.content
+                }
+                return
+            }
+            "post" -> {
+                val postObj = intent.getSerializableExtra("obj")
+                if (postObj is Article){
+                    richTextContent.html = postObj.content
+                }
+                return
+            }
+        }
+
     }
 }
 

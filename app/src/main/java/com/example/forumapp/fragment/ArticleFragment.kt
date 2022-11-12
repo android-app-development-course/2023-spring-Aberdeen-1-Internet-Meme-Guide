@@ -9,7 +9,6 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import com.example.forumapp.R
 import com.google.android.material.appbar.MaterialToolbar
-import com.rex.editor.view.RichEditorNew
 
 class ArticleFragment : Fragment() {
 
@@ -28,7 +27,7 @@ class ArticleFragment : Fragment() {
         // Inflate the layout for this fragment
 
 
-        val richTextContent = view.findViewById<RichEditorNew>(R.id.richText)
+//        val richTextContent = view.findViewById<RichEditorNew>(R.id.richText)
         val htmlTest = "<!DOCTYPE html>" +
                 "<html>" +
                 "    <head>" +
@@ -82,7 +81,7 @@ class ArticleFragment : Fragment() {
 //
 //        }
 
-        richTextContent.loadRichEditorCode(htmlTest)
+//        richTextContent.loadRichEditorCode(htmlTest)
 
 
         val topBar = view.findViewById<MaterialToolbar>(R.id.postTopBar)

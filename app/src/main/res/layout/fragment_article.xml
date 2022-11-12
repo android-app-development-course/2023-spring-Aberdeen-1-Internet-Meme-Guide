@@ -19,15 +19,13 @@
 
     <!--    </com.google.android.material.appbar.AppBarLayout>-->
 
-    <com.rex.editor.view.RichEditorNew
-        android:id="@+id/richText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/collectbutton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/postTopBar"
-        android:layout_marginTop="60dp"/>
+<!--    <com.rex.editor.view.RichEditorNew-->
+<!--        android:id="@+id/richText"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/postTopBar" />-->
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/postTopBar"
@@ -61,7 +59,6 @@
         android:layout_height="wrap_content"
         android:background="@drawable/icons8__collection"
         android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="@+id/postContent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
