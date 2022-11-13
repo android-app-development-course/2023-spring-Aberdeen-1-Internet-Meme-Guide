@@ -1,11 +1,10 @@
-package com.example.forumapp.fragment
+package com.example.forumapp
 
 import android.app.Activity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.example.forumapp.R
 import com.example.forumapp.models.Article
 import com.example.forumapp.models.NewsUnit
 import com.google.android.material.appbar.MaterialToolbar
@@ -32,12 +31,14 @@ class ArticleActivity() : Activity() {
 
     private fun fitContent(){
         val richTextContent = findViewById<RichEditor>(R.id.richText)
+        val topBar = findViewById<MaterialToolbar>(R.id.postTopBar)
         val type = intent.getStringExtra("type")
         when(type){
             "news" -> {
                 val newsObj = intent.getSerializableExtra("obj")
                 if (newsObj is NewsUnit){
                     richTextContent.html = newsObj.content
+                    topBar.title = newsObj.title
                 }
                 return
             }
@@ -45,6 +46,7 @@ class ArticleActivity() : Activity() {
                 val postObj = intent.getSerializableExtra("obj")
                 if (postObj is Article){
                     richTextContent.html = postObj.content
+                    topBar.title = postObj.title
                 }
                 return
             }

@@ -1,12 +1,11 @@
 package com.example.forumapp.models
 
-class Post(
-    type:String = "post",
+class News(
+    type:String = "news",
     title: String,
     content: String,
     author: String,
     time: String,
-    var tags: Array<String>,
     pictures: Array<String>,
     videos: Array<String>,
     files: Array<String>,
@@ -29,5 +28,5 @@ class Post(
     files,
     vote,
     status
-){
+) {
 }

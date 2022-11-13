@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.forumapp.ArticleActivity
 import com.example.forumapp.R
 import com.example.forumapp.models.NewsUnit
 
