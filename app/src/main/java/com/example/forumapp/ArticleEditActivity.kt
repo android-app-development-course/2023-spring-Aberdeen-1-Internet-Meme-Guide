@@ -1,15 +1,24 @@
 package com.example.forumapp
 
 import android.graphics.Color
+import android.net.Uri
 import android.os.Bundle
 import android.widget.ImageButton
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.appbar.MaterialToolbar
-import jp.wasabeef.richeditor.RichEditor
+import com.rex.editor.view.RichEditor
 
 class ArticleEditActivity : AppCompatActivity() {
     private var isTextColorChanged = false
     private var isTextBgColorChanged = false
+    private val getImages = registerForActivityResult(
+        ActivityResultContracts.GetMultipleContents()){
+        uriList: List<Uri> ->
+        if(uriList.isNotEmpty()){
+            insertImages(uriList)
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +30,9 @@ class ArticleEditActivity : AppCompatActivity() {
 
         val richEditor = findViewById<RichEditor>(R.id.editRichTextContent)
         initActions(richEditor)
+
+
+
     }
 
     private fun initActions(richEditor: RichEditor) {
@@ -129,7 +141,7 @@ class ArticleEditActivity : AppCompatActivity() {
         }
 
         findViewById<ImageButton>(R.id.action_insert_image).setOnClickListener {
-            insertImage()
+            getImages.launch("image/*")
         }
 
         findViewById<ImageButton>(R.id.action_insert_audio).setOnClickListener {
@@ -145,11 +157,19 @@ class ArticleEditActivity : AppCompatActivity() {
         }
     }
 
-    private fun insertImage(){
-        // todo 设置图片导入上传
+    private fun insertImages(uriList: List<Uri>) {
+        val richEditor = findViewById<RichEditor>(R.id.editRichTextContent)
+        for (uri in uriList){
+            richEditor.insertImage(uri.toString(),"picture",
+                "margin-top:10px;margin-bottom:10px;max-width:100%;")
+        }
     }
 
     private fun insertLink(){
+        // todo
+    }
+
+    private fun encodeToBase64(content:String){
         // todo
     }
 }

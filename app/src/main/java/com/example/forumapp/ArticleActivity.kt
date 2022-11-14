@@ -8,7 +8,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.forumapp.models.Article
 import com.example.forumapp.models.NewsUnit
 import com.google.android.material.appbar.MaterialToolbar
-import jp.wasabeef.richeditor.RichEditor
+import com.rex.editor.view.RichEditor
 
 
 class ArticleActivity() : Activity() {

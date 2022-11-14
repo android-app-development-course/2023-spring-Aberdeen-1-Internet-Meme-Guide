@@ -17,22 +17,45 @@
         app:menu="@menu/article_edit_top_bar"
         app:title="编辑文章" />
 
-    <jp.wasabeef.richeditor.RichEditor
-        android:id="@+id/editRichTextContent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/horizontalScrollView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/postTopBarEdit" />
+        app:layout_constraintTop_toBottomOf="@+id/postTopBarEdit">
+
+        <com.rex.editor.view.RichEditorNew
+            android:id="@+id/editRichTextContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/postTopBarEdit" />
+
+        <!--    <jp.wasabeef.richeditor.RichEditor-->
+        <!--        android:id="@+id/editRichTextContent"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/postTopBarEdit" />-->
+    </ScrollView>
 
 
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="2dp">
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -54,21 +77,21 @@
                 android:contentDescription="@null"
                 android:src="@drawable/icons8__vertical_line" />
 
-<!--            <ImageButton-->
-<!--                android:id="@+id/action_undo"-->
-<!--                android:layout_width="48dp"-->
-<!--                android:layout_height="48dp"-->
-<!--                android:background="@null"-->
-<!--                android:contentDescription="@null"-->
-<!--                android:src="@drawable/ic_undo" />-->
+            <!--            <ImageButton-->
+            <!--                android:id="@+id/action_undo"-->
+            <!--                android:layout_width="48dp"-->
+            <!--                android:layout_height="48dp"-->
+            <!--                android:background="@null"-->
+            <!--                android:contentDescription="@null"-->
+            <!--                android:src="@drawable/ic_undo" />-->
 
-<!--            <ImageButton-->
-<!--                android:id="@+id/action_redo"-->
-<!--                android:layout_width="48dp"-->
-<!--                android:layout_height="48dp"-->
-<!--                android:background="@null"-->
-<!--                android:contentDescription="@null"-->
-<!--                android:src="@drawable/ic_redo" />-->
+            <!--            <ImageButton-->
+            <!--                android:id="@+id/action_redo"-->
+            <!--                android:layout_width="48dp"-->
+            <!--                android:layout_height="48dp"-->
+            <!--                android:background="@null"-->
+            <!--                android:contentDescription="@null"-->
+            <!--                android:src="@drawable/ic_redo" />-->
 
             <ImageButton
                 android:id="@+id/action_bold"
@@ -126,45 +149,45 @@
                 android:contentDescription="@null"
                 android:src="@drawable/ic_format_h1" />
 
-<!--            <ImageButton-->
-<!--                android:id="@+id/action_heading2"-->
-<!--                android:layout_width="48dp"-->
-<!--                android:layout_height="48dp"-->
-<!--                android:background="@null"-->
-<!--                android:contentDescription="@null"-->
-<!--                android:src="@drawable/h2" />-->
+            <!--            <ImageButton-->
+            <!--                android:id="@+id/action_heading2"-->
+            <!--                android:layout_width="48dp"-->
+            <!--                android:layout_height="48dp"-->
+            <!--                android:background="@null"-->
+            <!--                android:contentDescription="@null"-->
+            <!--                android:src="@drawable/h2" />-->
 
-<!--            <ImageButton-->
-<!--                android:id="@+id/action_heading3"-->
-<!--                android:layout_width="48dp"-->
-<!--                android:layout_height="48dp"-->
-<!--                android:background="@null"-->
-<!--                android:contentDescription="@null"-->
-<!--                android:src="@drawable/h3" />-->
+            <!--            <ImageButton-->
+            <!--                android:id="@+id/action_heading3"-->
+            <!--                android:layout_width="48dp"-->
+            <!--                android:layout_height="48dp"-->
+            <!--                android:background="@null"-->
+            <!--                android:contentDescription="@null"-->
+            <!--                android:src="@drawable/h3" />-->
 
-<!--            <ImageButton-->
-<!--                android:id="@+id/action_heading4"-->
-<!--                android:layout_width="48dp"-->
-<!--                android:layout_height="48dp"-->
-<!--                android:background="@null"-->
-<!--                android:contentDescription="@null"-->
-<!--                android:src="@drawable/h4" />-->
+            <!--            <ImageButton-->
+            <!--                android:id="@+id/action_heading4"-->
+            <!--                android:layout_width="48dp"-->
+            <!--                android:layout_height="48dp"-->
+            <!--                android:background="@null"-->
+            <!--                android:contentDescription="@null"-->
+            <!--                android:src="@drawable/h4" />-->
 
-<!--            <ImageButton-->
-<!--                android:id="@+id/action_heading5"-->
-<!--                android:layout_width="48dp"-->
-<!--                android:layout_height="48dp"-->
-<!--                android:background="@null"-->
-<!--                android:contentDescription="@null"-->
-<!--                android:src="@drawable/h5" />-->
+            <!--            <ImageButton-->
+            <!--                android:id="@+id/action_heading5"-->
+            <!--                android:layout_width="48dp"-->
+            <!--                android:layout_height="48dp"-->
+            <!--                android:background="@null"-->
+            <!--                android:contentDescription="@null"-->
+            <!--                android:src="@drawable/h5" />-->
 
-<!--            <ImageButton-->
-<!--                android:id="@+id/action_heading6"-->
-<!--                android:layout_width="48dp"-->
-<!--                android:layout_height="48dp"-->
-<!--                android:background="@null"-->
-<!--                android:contentDescription="@null"-->
-<!--                android:src="@drawable/h6" />-->
+            <!--            <ImageButton-->
+            <!--                android:id="@+id/action_heading6"-->
+            <!--                android:layout_width="48dp"-->
+            <!--                android:layout_height="48dp"-->
+            <!--                android:background="@null"-->
+            <!--                android:contentDescription="@null"-->
+            <!--                android:src="@drawable/h6" />-->
 
             <ImageButton
                 android:id="@+id/action_txt_color"
@@ -268,8 +291,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:contentDescription="@null"
-                 />
+                android:contentDescription="@null" />
 
             <ImageButton
                 android:id="@+id/action_insert_video"
@@ -294,7 +316,6 @@
                 android:background="@null"
                 android:contentDescription="@null"
                 android:src="@drawable/icons8__file" />
-
 
 
         </LinearLayout>
