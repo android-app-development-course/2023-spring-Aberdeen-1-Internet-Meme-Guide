@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/postTopBar"
+        android:id="@+id/postTopBarEdit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/postTopBar" />
+        app:layout_constraintTop_toBottomOf="@+id/postTopBarEdit" />
 
 
     <HorizontalScrollView
@@ -41,8 +41,8 @@
 
             <ImageButton
                 android:id="@+id/action_fragment"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:background="@null"
                 android:contentDescription="@null"
                 android:src="@drawable/ic_action" />
@@ -54,21 +54,21 @@
                 android:contentDescription="@null"
                 android:src="@drawable/icons8__vertical_line" />
 
-            <ImageButton
-                android:id="@+id/action_undo"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:background="@null"
-                android:contentDescription="@null"
-                android:src="@drawable/ic_undo" />
+<!--            <ImageButton-->
+<!--                android:id="@+id/action_undo"-->
+<!--                android:layout_width="48dp"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:background="@null"-->
+<!--                android:contentDescription="@null"-->
+<!--                android:src="@drawable/ic_undo" />-->
 
-            <ImageButton
-                android:id="@+id/action_redo"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:background="@null"
-                android:contentDescription="@null"
-                android:src="@drawable/ic_redo" />
+<!--            <ImageButton-->
+<!--                android:id="@+id/action_redo"-->
+<!--                android:layout_width="48dp"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:background="@null"-->
+<!--                android:contentDescription="@null"-->
+<!--                android:src="@drawable/ic_redo" />-->
 
             <ImageButton
                 android:id="@+id/action_bold"
@@ -192,7 +192,7 @@
                 android:src="@drawable/ic_format_indent_increase" />
 
             <ImageButton
-                android:id="@+id/action_outdent"
+                android:id="@+id/action_indent_decrease"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
@@ -240,6 +240,14 @@
                 android:src="@drawable/ic_format_list_numbered" />
 
             <ImageButton
+                android:id="@+id/action_insert_checkbox"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@android:drawable/checkbox_on_background" />
+
+            <ImageButton
                 android:id="@+id/action_blockquote"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
@@ -255,21 +263,21 @@
                 android:contentDescription="@null"
                 android:src="@drawable/ic_insert_photo" />
 
-<!--            <ImageButton-->
-<!--                android:id="@+id/action_insert_audio"-->
-<!--                android:layout_width="48dp"-->
-<!--                android:layout_height="48dp"-->
-<!--                android:background="@null"-->
-<!--                android:contentDescription="@null"-->
-<!--                android:src="@drawable/audio" />-->
+            <ImageButton
+                android:id="@+id/action_insert_audio"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                 />
 
-<!--            <ImageButton-->
-<!--                android:id="@+id/action_insert_video"-->
-<!--                android:layout_width="48dp"-->
-<!--                android:layout_height="48dp"-->
-<!--                android:background="@null"-->
-<!--                android:contentDescription="@null"-->
-<!--                android:src="@drawable/video" />-->
+            <ImageButton
+                android:id="@+id/action_insert_video"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/icons8_video_clip" />
 
             <ImageButton
                 android:id="@+id/action_insert_link"
@@ -280,12 +288,14 @@
                 android:src="@drawable/ic_insert_link" />
 
             <ImageButton
-                android:id="@+id/action_insert_checkbox"
+                android:id="@+id/action_insert_file"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
                 android:contentDescription="@null"
-                android:src="@android:drawable/checkbox_on_background" />
+                android:src="@drawable/icons8__file" />
+
+
 
         </LinearLayout>
     </HorizontalScrollView>
