@@ -19,18 +19,20 @@
 
     <!--    </com.google.android.material.appbar.AppBarLayout>-->
 
-<!--    <com.rex.editor.view.RichEditorNew-->
-<!--        android:id="@+id/richText"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/postTopBar" />-->
+    <!--    <com.rex.editor.view.RichEditorNew-->
+    <!--        android:id="@+id/richText"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/postTopBar" />-->
+
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/postTopBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -39,9 +41,6 @@
         app:navigationIcon="@drawable/icons8__back"
         app:title="Title" />
 
-
-
-
     <Button
         android:id="@+id/likebutton"
         android:layout_width="wrap_content"
@@ -49,18 +48,25 @@
         android:background="@drawable/icons8__good"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/collectbutton"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/collectbutton" />
+        app:layout_constraintTop_toTopOf="@+id/collectbutton"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/collectbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="672dp"
         android:background="@drawable/icons8__collection"
         android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/postTopBar"
+        app:layout_constraintVertical_bias="0.555" />
 
     <Button
         android:id="@+id/replybutton"
@@ -69,9 +75,10 @@
         android:background="@drawable/icons8__reply"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/collectbutton"
-        app:layout_constraintTop_toTopOf="@+id/collectbutton" />
-
+        app:layout_constraintTop_toTopOf="@+id/collectbutton"
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
@@ -80,6 +87,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/collectbutton"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -90,21 +98,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
-
-            <Button
-                android:id="@+id/dialog_comment_bt"
-                android:layout_width="72dp"
-                android:layout_height="wrap_content"
-                android:background="#D8D8D8"
-                android:text="发布"
-                android:textColor="@android:color/white"
-                android:textSize="14sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/dialog_comment_et"
-                app:layout_constraintVertical_bias="1.0" />
 
             <EditText
                 android:id="@+id/dialog_comment_et"
@@ -120,8 +113,21 @@
                 android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/dialog_comment_bt"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:background="#D8D8D8"
+                android:text="发布"
+                android:textColor="#795548"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/dialog_comment_et"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/dialog_comment_et"
+                app:layout_constraintVertical_bias="1.0" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 

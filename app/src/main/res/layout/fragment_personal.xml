@@ -6,7 +6,14 @@
     android:layout_height="match_parent"
 
     tools:context=".MainActivity">
-
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mainArea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
     <RelativeLayout
         android:id="@+id/relativeLayout4"
         android:layout_width="match_parent"
@@ -79,7 +86,7 @@
         app:layout_constraintVertical_bias="0.029" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/FavoritesButton"
         android:layout_width="408dp"
         android:layout_height="59dp"
         android:layout_marginTop="80dp"

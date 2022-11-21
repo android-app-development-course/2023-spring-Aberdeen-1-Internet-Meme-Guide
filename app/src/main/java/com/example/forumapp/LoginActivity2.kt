@@ -29,7 +29,7 @@ class LoginActivity2 : AppCompatActivity() {
 
         val acEdit = findViewById<TextInputEditText>(R.id.accountTextField)
         val pwEdit = findViewById<TextInputEditText>(R.id.passwordTextField)
-        val btn = findViewById<Button>(R.id.Button)
+        val btn = findViewById<Button>(R.id.loginButton)
         btn.setOnClickListener {
             val loginPass = acEdit.text.toString()    // 获取EditText的内容
             val passWord = pwEdit.text.toString()

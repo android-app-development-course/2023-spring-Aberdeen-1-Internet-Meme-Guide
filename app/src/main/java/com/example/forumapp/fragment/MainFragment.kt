@@ -37,10 +37,12 @@ class MainFragment:NavHostFragment() {
                 }
                 R.id.postNaviBtn -> {
                     // TODO: 加路由
+
                     true
                 }
                 R.id.myNaviBtn -> {
                     // TODO: 加路由
+
                     true
                 }
                 else -> false
