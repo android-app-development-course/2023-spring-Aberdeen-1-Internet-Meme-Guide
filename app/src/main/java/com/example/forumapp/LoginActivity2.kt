@@ -1,15 +1,11 @@
 package com.example.forumapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
 import android.widget.Button
-import android.widget.EditText
 import android.widget.ImageView
-import android.widget.Toast
-import com.example.forumapp.R
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputEditText
-import org.xutils.common.util.DensityUtil
 import org.xutils.image.ImageOptions
 import org.xutils.x
 

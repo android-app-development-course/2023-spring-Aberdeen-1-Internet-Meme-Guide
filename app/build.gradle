@@ -44,8 +44,13 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
     implementation "com.github.RexSuper:RichEditor:1.0.5"
 
+
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
 
+//    implementation 'jp.wasabeef:richeditor-android:2.0.0'
+
+
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
 //    implementation 'jp.wasabeef:richeditor-android:2.0.0'
 
 //    implementation  'com.scwang.smart:refresh-layout-kernel:2.0.3'      //核心必须依赖
