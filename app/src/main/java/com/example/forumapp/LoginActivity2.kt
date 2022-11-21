@@ -1,15 +1,11 @@
 package com.example.forumapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
 import android.widget.Button
-import android.widget.EditText
 import android.widget.ImageView
-import android.widget.Toast
-import com.example.forumapp.R
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputEditText
-import org.xutils.common.util.DensityUtil
 import org.xutils.image.ImageOptions
 import org.xutils.x
 
@@ -29,7 +25,7 @@ class LoginActivity2 : AppCompatActivity() {
 
         val acEdit = findViewById<TextInputEditText>(R.id.accountTextField)
         val pwEdit = findViewById<TextInputEditText>(R.id.passwordTextField)
-        val btn = findViewById<Button>(R.id.Button)
+        val btn = findViewById<Button>(R.id.loginButton)
         btn.setOnClickListener {
             val loginPass = acEdit.text.toString()    // 获取EditText的内容
             val passWord = pwEdit.text.toString()

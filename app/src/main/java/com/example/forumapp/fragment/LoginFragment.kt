@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.forumapp.R
 import org.json.JSONObject
 import java.io.IOException
@@ -71,6 +72,7 @@ class LoginFragment : Fragment() {
         }
 
         registerBtn.setOnClickListener {
+            findNavController().navigate(R.navigation.nav_login_to_register)
 
         }
         return view
