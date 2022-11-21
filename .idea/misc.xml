@@ -23,6 +23,8 @@
         <entry key="..\:/GitClone/unbengable/app/src/main/res/layout/activity_news.xml" value="0.264" />
         <entry key="..\:/GitClone/unbengable/app/src/main/res/layout/news_short_layout.xml" value="0.24947916666666667" />
         <entry key="..\:/GitClone/unbengable/app/src/main/res/menu/bottom_navigation.xml" value="0.24947916666666667" />
+        <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/activity_article.xml" value="0.24947916666666667" />
+        <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/activity_article_edit.xml" value="0.186328125" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/activity_login.xml" value="0.24947916666666667" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/activity_login2.xml" value="0.24947916666666667" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/activity_main.xml" value="0.264" />
@@ -33,9 +35,11 @@
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/fragment_login.xml" value="0.24947916666666667" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/fragment_main.xml" value="0.2" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/fragment_news.xml" value="0.24947916666666667" />
+        <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/fragment_personal.xml" value="0.264" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/fragment_post.xml" value="0.264" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/fragment_scrolling.xml" value="0.24947916666666667" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/fragment_search.xml" value="0.24947916666666667" />
+        <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/item_news_layout.xml" value="0.72" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/item_post_layout.xml" value="0.264" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/item_search_layout.xml" value="0.72" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/login.xml" value="0.264" />
@@ -47,6 +51,7 @@
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/search_short_layout.xml" value="0.2484375" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/test.xml" value="0.24947916666666667" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/user_layout.xml" value="0.2" />
+        <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/menu/article_edit_top_bar.xml" value="0.2484375" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/menu/bottom_navigation.xml" value="0.24947916666666667" />
       </map>
     </option>

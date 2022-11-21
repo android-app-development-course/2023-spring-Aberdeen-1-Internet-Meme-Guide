@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -19,14 +18,6 @@
 
     <!--    </com.google.android.material.appbar.AppBarLayout>-->
 
-<!--    <com.rex.editor.view.RichEditorNew-->
-<!--        android:id="@+id/richText"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/postTopBar" />-->
-
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/postTopBar"
         android:layout_width="match_parent"
@@ -39,8 +30,32 @@
         app:navigationIcon="@drawable/icons8__back"
         app:title="Title" />
 
+    <ScrollView
+        android:id="@+id/postContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postTopBar">
 
+        <com.rex.editor.view.RichEditorNew
+            android:id="@+id/richText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            />
 
+<!--        <jp.wasabeef.richeditor.RichEditor-->
+<!--            android:id="@+id/richText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:focusableInTouchMode="false"-->
+<!--            android:focusable="false"/>-->
+
+    </ScrollView>
 
     <Button
         android:id="@+id/likebutton"
@@ -59,6 +74,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/icons8__collection"
         android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/postContent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -83,6 +99,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:visibility="invisible"
             android:id="@+id/relativeLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -97,7 +114,7 @@
                 android:layout_height="wrap_content"
                 android:background="#D8D8D8"
                 android:text="发布"
-                android:textColor="@android:color/white"
+                android:textColor="#795548"
                 android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -129,6 +146,3 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
