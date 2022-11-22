@@ -73,7 +73,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/BrowsingHistoryButton"
         android:layout_width="402dp"
         android:layout_height="48dp"
         android:layout_marginTop="80dp"

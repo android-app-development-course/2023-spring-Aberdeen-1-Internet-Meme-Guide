@@ -16,8 +16,13 @@ class PersonalFragment : Fragment() {
     ): View? {
         val view=inflater.inflate(R.layout.fragment_personal, container, false)
         val FavoritesButton = view.findViewById<Button>(R.id.FavoritesButton)
+        val BrowsingHistoryButton = view.findViewById<Button>(R.id.BrowsingHistoryButton)
         FavoritesButton.setOnClickListener {
             replaceComponent(CollectFragment())
+            true
+        }
+        BrowsingHistoryButton.setOnClickListener {
+            replaceComponent(BrowsingHistoryFragment())
             true
         }
         return inflater.inflate(R.layout.fragment_personal, container, false)
