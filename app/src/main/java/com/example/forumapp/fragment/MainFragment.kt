@@ -40,11 +40,16 @@ class MainFragment:NavHostFragment() {
                 }
                 R.id.postNaviBtn -> {
                     // TODO: 加路由
+
                     true
                 }
                 R.id.myNaviBtn -> {
                     // TODO: 加路由
+<<<<<<< HEAD
                     findNavController().navigate(R.navigation.nav_graph)
+=======
+
+>>>>>>> eead8193d2830ff1baa7e32411495badfbbe8c2d
                     true
                 }
                 else -> false
