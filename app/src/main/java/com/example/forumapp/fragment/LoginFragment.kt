@@ -1,6 +1,7 @@
 package com.example.forumapp.fragment
 
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -47,6 +48,7 @@ import java.net.Socket
 
 
 class LoginFragment : Fragment() {
+    @SuppressLint("ResourceType")
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
