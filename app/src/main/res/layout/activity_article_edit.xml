@@ -55,7 +55,8 @@
         android:layout_marginBottom="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -142,7 +143,7 @@
                 android:src="@drawable/ic_format_underlined" />
 
             <ImageButton
-                android:id="@+id/action_heading1"
+                android:id="@+id/action_heading"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
@@ -318,6 +319,43 @@
                 android:src="@drawable/icons8__file" />
 
 
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/optionChipBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white"
+        android:visibility="visible">
+
+<!--        <com.google.android.material.chip.ChipGroup-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:singleLine="true">-->
+
+<!--            <com.google.android.material.chip.Chip-->
+<!--                android:id="@+id/action_heading1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:chipIcon="@drawable/ic_format_h1"/>-->
+
+<!--        </com.google.android.material.chip.ChipGroup>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ic_format_heading"
+                />
         </LinearLayout>
     </HorizontalScrollView>
 

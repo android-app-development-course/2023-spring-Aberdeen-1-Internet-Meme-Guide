@@ -31,6 +31,12 @@
         <entry key="..\:/GitClone/unbengable/app/src/main/res/layout/login.xml" value="0.264" />
         <entry key="..\:/GitClone/unbengable/app/src/main/res/layout/news_short_layout.xml" value="0.24947916666666667" />
         <entry key="..\:/GitClone/unbengable/app/src/main/res/menu/bottom_navigation.xml" value="0.24947916666666667" />
+        <entry key="..\:/GitClone/unbengable/app/src/main/res/layout/fragment_login.xml" value="0.16757246376811594" />
+        <entry key="..\:/GitClone/unbengable/app/src/main/res/layout/news_short_layout.xml" value="0.24947916666666667" />
+        <entry key="..\:/GitClone/unbengable/app/src/main/res/menu/bottom_navigation.xml" value="0.24947916666666667" />
+        <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/drawable/ic_format_heading.xml" value="0.254" />
+        <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/activity_article.xml" value="0.24947916666666667" />
+        <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/activity_article_edit.xml" value="0.264" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/activity_login.xml" value="0.24947916666666667" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/activity_login2.xml" value="0.24947916666666667" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/activity_main.xml" value="0.264" />
@@ -42,6 +48,7 @@
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/fragment_main.xml" value="0.2" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/fragment_news.xml" value="0.24947916666666667" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/fragment_post.xml" value="0.264" />
+        <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/fragment_register.xml" value="0.24947916666666667" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/fragment_scrolling.xml" value="0.24947916666666667" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/fragment_search.xml" value="0.24947916666666667" />
         <entry key="..\:/git/repository/emlat/unbengable/app/src/main/res/layout/item_post_layout.xml" value="0.264" />

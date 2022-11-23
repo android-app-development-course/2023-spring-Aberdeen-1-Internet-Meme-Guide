@@ -29,6 +29,7 @@ class ArticleEditActivity : AppCompatActivity() {
         }
 
         val richEditor = findViewById<RichEditor>(R.id.editRichTextContent)
+        richEditor.setPadding(10,0,10,0)
         initActions(richEditor)
 
 
@@ -80,21 +81,22 @@ class ArticleEditActivity : AppCompatActivity() {
             richEditor.setUnderline()
         }
 
-        findViewById<ImageButton>(R.id.action_heading1).setOnClickListener {
+        findViewById<ImageButton>(R.id.action_heading).setOnClickListener {
             richEditor.setHeading(1)
         }
 
-        // other headings
+        // other headings or heading selection
 
         findViewById<ImageButton>(R.id.action_txt_color).setOnClickListener {
             if (isTextColorChanged){
                 richEditor.setTextColor(Color.BLACK)
                 isTextColorChanged = false
             }else{
+                // todo 添加调色盘
                 richEditor.setTextColor(Color.RED)
                 isTextColorChanged = true
             }
-            // todo 添加调色盘
+
         }
 
         findViewById<ImageButton>(R.id.action_bg_color).setOnClickListener {
@@ -102,10 +104,11 @@ class ArticleEditActivity : AppCompatActivity() {
                 richEditor.setTextColor(Color.TRANSPARENT)
                 isTextBgColorChanged = false
             }else{
+                // todo 添加调色盘
                 richEditor.setTextColor(Color.YELLOW)
                 isTextBgColorChanged = true
             }
-            // todo 添加调色盘
+
         }
 
         findViewById<ImageButton>(R.id.action_indent).setOnClickListener {
