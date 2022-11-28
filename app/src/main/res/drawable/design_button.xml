@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--按键按下时样式-->
+    <item android:state_pressed="true">
+        <shape>
+            <!--渐变颜色-->
+            <gradient android:startColor="#99CC33"
+                android:endColor="#99CC33"
+                android:angle="270" />
+            <!--边框宽度及颜色-->
+            <stroke android:width="1dip" android:color="#f403c9" />
+            <!--边框角度-->
+            <corners android:radius="2dp" />
+            <!--按键内边距-->
+            <padding android:left="10dp" android:top="10dp"
+                android:right="10dp" android:bottom="10dp" />
+        </shape>
+    </item>
+
+    <!--按键初始样式-->
+    <item >
+        <shape>
+            <gradient android:startColor="#336633"
+                android:endColor="#336633"
+                android:angle="180"
+                />
+            <stroke android:width="1dip" android:color="#f403c9" />
+            <corners android:radius="500dip" />
+            <padding android:left="10dp" android:top="10dp"
+                android:right="10dp" android:bottom="10dp" />
+        </shape>
+    </item>
+
+</selector>
