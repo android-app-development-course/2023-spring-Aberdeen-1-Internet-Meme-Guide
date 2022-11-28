@@ -11,6 +11,12 @@ class DataServices {
         //todo
     }
 
+    fun requestImage(id:String){}
+
+    fun requestVideo(id:String){}
+    
+    fun requestFile(id:String){}
+
     fun requestPostByTag(tag:String,page: Int){
         //todo
     }

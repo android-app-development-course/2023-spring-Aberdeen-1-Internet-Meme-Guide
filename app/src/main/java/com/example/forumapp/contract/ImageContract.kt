@@ -1,11 +1,11 @@
-package com.example.forumapp.contrast
+package com.example.forumapp.contract
 
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import androidx.activity.result.contract.ActivityResultContract
 
-class MultipleImageContrast : ActivityResultContract<Unit?, Uri?>(){
+class MultipleImageContract : ActivityResultContract<Unit?, Uri?>(){
     override fun createIntent(context: Context, input: Unit?): Intent {
         TODO("Not yet implemented")
     }
