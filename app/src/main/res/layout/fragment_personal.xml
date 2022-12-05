@@ -75,30 +75,30 @@
 
     <Button
         android:id="@+id/BrowsingHistoryButton"
-        android:layout_width="94dp"
-        android:layout_height="79dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="102dp"
+        android:layout_height="101dp"
+        android:layout_marginBottom="452dp"
         android:background="@drawable/design_button"
         android:text="浏览历史"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintEnd_toStartOf="@+id/FavoritesButton"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout4"
-        app:layout_constraintVertical_bias="0.045" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/FavoritesButton"
-        android:layout_width="94dp"
-        android:layout_height="76dp"
+        android:layout_width="101dp"
+        android:layout_height="99dp"
         android:layout_marginBottom="352dp"
         android:background="@drawable/design_button"
         android:text="收藏"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout4"
-        app:layout_constraintVertical_bias="0.97" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

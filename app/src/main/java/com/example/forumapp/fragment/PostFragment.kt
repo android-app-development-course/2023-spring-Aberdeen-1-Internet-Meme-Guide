@@ -33,7 +33,7 @@ class PostFragment: Fragment() {
     }
 
     private fun initNews() {
-        repeat(2) {
+        repeat(5) {
 //            newsList.add(NewsUnit("Banana", R.drawable.test_2,"丹爷","2022-1-1"))
 //            newsList.add(NewsUnit("Apple", R.drawable.test_1,"陈哥","2022-12-1"))
 

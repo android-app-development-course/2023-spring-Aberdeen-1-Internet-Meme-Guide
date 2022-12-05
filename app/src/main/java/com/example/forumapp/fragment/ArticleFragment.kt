@@ -16,7 +16,7 @@ class ArticleFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view=inflater.inflate(R.layout.fragment_article, container, false)
+        val view=inflater.inflate(R.layout.activity_article, container, false)
         val replyFragment = view.findViewById<ConstraintLayout>(R.id.constraintLayout2)
         val replyBtn = view.findViewById<Button>(R.id.replybutton)
         replyBtn.setOnClickListener {

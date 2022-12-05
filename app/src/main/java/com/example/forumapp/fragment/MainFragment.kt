@@ -45,8 +45,8 @@ class MainFragment:NavHostFragment() {
                 }
                 R.id.myNaviBtn -> {
                     // TODO: 加路由
-
-                    findNavController().navigate(R.navigation.nav_graph)
+                    replaceComponent(PersonalFragment())
+                    //findNavController().navigate(R.navigation.nav_graph)
 
 
 
