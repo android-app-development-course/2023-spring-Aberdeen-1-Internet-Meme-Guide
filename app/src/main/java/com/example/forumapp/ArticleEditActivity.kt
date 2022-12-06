@@ -3,7 +3,10 @@ package com.example.forumapp
 import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageButton
+import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.appbar.MaterialToolbar
@@ -81,7 +84,18 @@ class ArticleEditActivity : AppCompatActivity() {
             richEditor.setUnderline()
         }
 
+        val optionBar = findViewById<LinearLayout>(R.id.postOptionBar)
+        optionBar.visibility = View.GONE
+
         findViewById<ImageButton>(R.id.action_heading).setOnClickListener {
+            if (optionBar.visibility == View.GONE){
+                optionBar.visibility = View.VISIBLE
+            }else{
+                optionBar.visibility = View.GONE
+            }
+        }
+
+        findViewById<ImageView>(R.id.ic_heading1).setOnClickListener {
             richEditor.setHeading(1)
         }
 
@@ -158,6 +172,8 @@ class ArticleEditActivity : AppCompatActivity() {
         findViewById<ImageButton>(R.id.action_insert_link).setOnClickListener {
             insertLink()
         }
+
+
     }
 
     private fun insertImages(uriList: List<Uri>) {
