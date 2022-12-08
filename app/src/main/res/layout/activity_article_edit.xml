@@ -322,42 +322,75 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <HorizontalScrollView
-        android:id="@+id/optionChipBar"
+    <LinearLayout
+        android:id="@+id/postOptionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:background="@color/white"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
         android:visibility="visible">
-
-<!--        <com.google.android.material.chip.ChipGroup-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            app:singleLine="true">-->
-
-<!--            <com.google.android.material.chip.Chip-->
-<!--                android:id="@+id/action_heading1"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                app:chipIcon="@drawable/ic_format_h1"/>-->
-
-<!--        </com.google.android.material.chip.ChipGroup>-->
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <CheckBox
-                android:id="@+id/icon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:button="@drawable/ic_format_heading"
-                />
+            <ImageView
+                android:id="@+id/ic_heading1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_format_heading" />
         </LinearLayout>
-    </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ic_heading2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_format_h2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ic_heading3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_format_h3" />
+
+            <ImageView
+                android:id="@+id/ic_heading4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_format_h4" />
+
+            <ImageView
+                android:id="@+id/ic_heading5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_format_h5" />
+
+            <ImageView
+                android:id="@+id/ic_heading6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_format_h6" />
+        </LinearLayout>
+    </LinearLayout>
 
 
 

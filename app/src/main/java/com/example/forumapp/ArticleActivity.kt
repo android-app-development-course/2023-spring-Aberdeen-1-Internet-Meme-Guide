@@ -33,6 +33,7 @@ class ArticleActivity() : Activity() {
         val richTextContent = findViewById<RichEditor>(R.id.richText)
         val topBar = findViewById<MaterialToolbar>(R.id.postTopBar)
         val type = intent.getStringExtra("type")
+        richTextContent.setPadding(10,0,10,0)
         when(type){
             "news" -> {
                 val newsObj = intent.getSerializableExtra("obj")
