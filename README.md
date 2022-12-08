@@ -30,16 +30,17 @@ androidTestImplementation 'androidx.test.ext:junit:1.1.3'
 androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
 Based on the version of Android we tested, we recommend that you use API32,
-API33 for maximum software compatibility.
+API33 and Android 10.0 for maximum software compatibility.
 
 
 
 
 #### Instructions for Use
 
-1. Click to open the software
-2. Click the registration button to register the account password required for the first login!
-3. Enter the registered account password to log in to the software
+1. Click Device Manager and select a virtual device which is API 32 or 33 and download it
+2. Run the virtual machine and click Run after the virtual machine is loaded
+3. Click the registration button to register the account password required for the first login
+4. Enter the registered account password to log in to the software
 
 #### Participate in contribution
 
