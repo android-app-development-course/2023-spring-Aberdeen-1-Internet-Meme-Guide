@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.example.forumapp.models.Article
 import com.example.forumapp.models.NewsUnit
+import com.example.forumapp.models.Post
 import com.google.android.material.appbar.MaterialToolbar
 import com.rex.editor.view.RichEditor
 
@@ -45,7 +45,7 @@ class ArticleActivity() : Activity() {
             }
             "post" -> {
                 val postObj = intent.getSerializableExtra("obj")
-                if (postObj is Article){
+                if (postObj is Post){
                     richTextContent.html = postObj.content
                     topBar.title = postObj.title
                 }
@@ -55,6 +55,10 @@ class ArticleActivity() : Activity() {
 
     }
 }
+
+class PostViewModel(
+//    private val repository:DataRepository,
+)
 
 
 

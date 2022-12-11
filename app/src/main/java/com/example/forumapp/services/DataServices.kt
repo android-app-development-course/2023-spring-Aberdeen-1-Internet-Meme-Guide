@@ -1,7 +1,5 @@
 package com.example.forumapp.services
 
-import com.example.forumapp.models.Article
-
 class DataServices {
     fun requestNews(page:Int){
         // todo

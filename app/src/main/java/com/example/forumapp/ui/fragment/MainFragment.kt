@@ -1,4 +1,4 @@
-package com.example.forumapp.fragment
+package com.example.forumapp.ui.fragment
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
 import com.example.forumapp.ArticleEditActivity
 import com.example.forumapp.R
 import com.google.android.material.bottomnavigation.BottomNavigationView

@@ -1,4 +1,4 @@
-package com.example.forumapp.fragment
+package com.example.forumapp.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

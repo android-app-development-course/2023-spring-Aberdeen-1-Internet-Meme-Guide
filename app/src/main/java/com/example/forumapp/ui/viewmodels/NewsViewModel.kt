@@ -1,55 +1,27 @@
-package com.example.forumapp.fragment
+package com.example.forumapp.ui.viewmodels
 
-import android.content.Intent
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
-import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.forumapp.ArticleActivity
+import androidx.lifecycle.ViewModel
 import com.example.forumapp.R
 import com.example.forumapp.models.NewsUnit
 
-class NewsFragment: Fragment() {
-    private val newsList = ArrayList<NewsUnit>()
+class NewsViewModel:ViewModel() {
+    var newsList:ArrayList<NewsUnit>
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        val view=inflater.inflate(R.layout.fragment_news, container, false)
+    init {
+        newsList = ArrayList()
+        initNews()
+    }
 
-
-        val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerViewForNews)
-        initNews()  // 添加新闻
-        val layoutManager = LinearLayoutManager(activity)
-        layoutManager.orientation = LinearLayoutManager.VERTICAL
-        recyclerView.layoutManager = layoutManager    // 布局管理器
-        val adapter = NewsAdapter(newsList)
-        adapter.onItemClick = { v, position ->    // 点击事件
-            val newsUnit = newsList[position]
-            val intent = Intent(activity, ArticleActivity::class.java).apply {
-                putExtra("type","news")
-                putExtra("obj",newsUnit)
-            }
-            startActivity(intent)
-        }
-        recyclerView.adapter= adapter
-
-
-        return view
-
+    override fun onCleared() {
+        newsList = ArrayList()
+        super.onCleared()
     }
 
     private fun initNews() {
         repeat(2) {
             newsList.add(NewsUnit("Apple", R.drawable.test_1,"陈哥",
-                "2022-12-1","<!DOCTYPE html>" +
+                "2022-12-1",
+                "<!DOCTYPE html>" +
                         "<html>" +
                         "    <head>" +
                         "        <meta charset=\"utf-8\">" +
@@ -143,42 +115,4 @@ class NewsFragment: Fragment() {
 
         }
     }
-}
-
-//适配器
-class NewsAdapter (val newsList: List<NewsUnit>):
-    RecyclerView.Adapter<NewsAdapter.ViewHolder>(){
-    lateinit var onItemClick: (view: View, position: Int) -> Unit
-
-    inner class ViewHolder(view:View) : RecyclerView.ViewHolder(view){
-        val newsPicture:ImageView=view.findViewById(R.id.newsPicture)
-        val newsTitle: TextView=view.findViewById(R.id.newsTitle)
-        val newsTime: TextView = view.findViewById(R.id.newsTime)
-        val newsAuthor:TextView = view.findViewById(R.id.newsAuthor)
-    }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view=LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_news_layout,parent,false)
-//        val viewHolder=ViewHolder(view)
-//        viewHolder.itemView.setOnClickListener{
-////            val position=viewHolder.adapterPosition
-//        }
-
-        return ViewHolder(view)
-    }
-
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val operator=newsList[position]
-        holder.newsPicture.setImageResource(operator.imageId)
-        holder.newsTitle.text=operator.title
-        holder.newsTime.text = operator.time
-        holder.newsAuthor.text = operator.author
-
-        holder.itemView.setOnClickListener{
-            onItemClick.invoke(it, position)
-        }
-    }
-
-    override fun getItemCount(): Int =newsList.size
 }

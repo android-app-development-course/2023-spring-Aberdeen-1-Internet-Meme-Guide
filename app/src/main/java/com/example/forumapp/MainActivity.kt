@@ -9,7 +9,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.example.forumapp.fragment.MainFragment
+import com.example.forumapp.ui.fragment.MainFragment
 
 
 class MainActivity : AppCompatActivity() {

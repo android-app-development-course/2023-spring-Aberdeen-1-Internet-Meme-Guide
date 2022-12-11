@@ -1,32 +1,19 @@
 package com.example.forumapp.models
 
-class News(
-    type:String = "news",
-    title: String,
-    content: String,
-    author: String,
-    time: String,
-    pictures: Array<String>,
-    videos: Array<String>,
-    files: Array<String>,
-    vote: String,
-    var likes: Int,
-    var collect: Int,
-    var share: Int,
-    var comment: Int,
-    status: String
+import org.xutils.http.RequestParams
+import java.io.Serializable
 
+data class News(
+    val newsId:String = "",
+    val title:String = "",
+    val content:String = "",
+    val author:String = "",
+    val time:String = "",
+    val pictures:List<String> = listOf(),
+    val videos:List<String> = listOf(),
+    val status:String = "",
+    val numOfLikes:Int = 0,
+    val numOfCollect:Int = 0,
+    val numOfComment:Int = 0,
+):Serializable
 
-) : Article(
-    type,
-    title,
-    content,
-    author,
-    time,
-    pictures,
-    videos,
-    files,
-    vote,
-    status
-) {
-}
