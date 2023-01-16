@@ -1,5 +1,6 @@
 package com.example.forumapp.ui.fragment
 
+import android.app.Fragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,7 +10,7 @@ import com.example.forumapp.R
 import com.example.forumapp.services.UserRepository
 import org.xutils.http.RequestParams
 
-class RegisterFragment: Fragment(R.layout.fragment_register){
+class RegisterFragment: Fragment(){
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

@@ -43,7 +43,7 @@ class DataServices {
         //todo
     }
 
-    fun postArticle(obj:Article){
+    fun postArticle(){
         //todo
 //        val gson = Gson()
 //        val json = gson.toJson(obj)
