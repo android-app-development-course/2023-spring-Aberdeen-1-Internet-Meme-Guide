@@ -1,19 +1,17 @@
 package com.example.forumapp.ui.fragment
 
 import android.annotation.SuppressLint
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.NavHostFragment
-import com.example.forumapp.ArticleEditActivity
+import androidx.navigation.findNavController
 import com.example.forumapp.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class MainFragment:NavHostFragment() {
+class MainFragment:Fragment() {
 
 
     @SuppressLint("ResourceType")
@@ -44,8 +42,8 @@ class MainFragment:NavHostFragment() {
                 }
                 R.id.myNaviBtn -> {
                     // TODO: 加路由
-                    replaceComponent(PersonalFragment())
-                    //findNavController().navigate(R.navigation.nav_graph)
+//                    replaceComponent(PersonalFragment())
+                    view.findNavController().navigate(R.id.action_mainFragment_to_personalFragment)
 
 
 
@@ -55,12 +53,10 @@ class MainFragment:NavHostFragment() {
             }
         }
 
-        val postBtn=view.findViewById<FloatingActionButton>(R.id.postNaviBtn)
-        postBtn.setOnClickListener{
-            // TODO
-            val intent = Intent(activity, ArticleEditActivity::class.java)
-            startActivity(intent)
-
+        view.findViewById<FloatingActionButton>(R.id.postNaviBtn).setOnClickListener{
+//            val intent = Intent(activity, ArticleEditActivity::class.java)
+//            startActivity(intent)
+            view.findNavController().navigate(R.id.action_mainFragment_to_articleEditActivity)
         }
         return view
     }
