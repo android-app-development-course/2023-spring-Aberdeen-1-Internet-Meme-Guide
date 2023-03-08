@@ -3,6 +3,7 @@ package com.example.forumapp.services.userServices
 import com.example.forumapp.models.User
 
 interface UserServices {
+
     // 登录注册相关
     fun doLoginByEmail(email:String, password:String)
 
