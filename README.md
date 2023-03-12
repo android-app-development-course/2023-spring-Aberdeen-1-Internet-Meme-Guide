@@ -16,7 +16,8 @@ Weiyu Tong
 The software is based on Kotlin language, and MySQL is used to build the database.
 
 The dependencies used are:
-implementation 'androidx.core:core-ktx:1.7.0'
+implementation 'androidx.core:core-ktx:1
+0.7.0'
 implementation 'androidx.appcompat:appcompat:1.4.2'
 implementation 'com.google.android.material:material:1.6.1'
 implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
