@@ -20,11 +20,11 @@ class RegisterFragment: Fragment(){
     }
 
     suspend fun doRegister(email:String, password:String){
-        val repository = UserRepository()
+//        val repository = UserRepository()
         val data = RequestParams()
         data.addBodyParameter("email",email)
         data.addBodyParameter("password",password)
-        repository.register(data)
+//        repository.register(data)
         return
     }
 }
