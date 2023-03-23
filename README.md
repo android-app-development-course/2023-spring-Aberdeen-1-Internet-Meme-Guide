@@ -1,18 +1,9 @@
-<<<<<<< HEAD
-# unbengable
+# 2023-spring-Aberdeen-1-Internet-Hotterrier-Guide
+Internet Hotterrier Guide
+
 
 #### Introduction
-This campus forum software is a comprehensive academic exchange platform for students completed by the sixth group.
-Students can carry out academic communication, daily life chat and other types through this software.
-The members of Group 6:
-Dan Luo
-Yushen Ren
-Weifeng Xiong
-Zijian Chen
-Zehua Zhang
-Guokai Xiang
-Zhaojian Zhou
-Weiyu Tong
+
 #### Software Architecture
 The software is based on Kotlin language, and MySQL is used to build the database.
 
@@ -53,7 +44,4 @@ API33 and Android 10.0 for maximum software compatibility.
 
 
 
-=======
-# 2023-spring-Aberdeen-1-Internet-Hotterrier-Guide
-Internet Hotterrier Guide
->>>>>>> 2086ba52915c980eedad70ee17a124a65d7c5fa5
+
