@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # unbengable
 
 #### Introduction
@@ -52,3 +53,7 @@ API33 and Android 10.0 for maximum software compatibility.
 
 
 
+=======
+# 2023-spring-Aberdeen-1-Internet-Hotterrier-Guide
+Internet Hotterrier Guide
+>>>>>>> 2086ba52915c980eedad70ee17a124a65d7c5fa5
