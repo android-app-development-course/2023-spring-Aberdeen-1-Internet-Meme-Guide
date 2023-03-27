@@ -1,5 +1,5 @@
-# 2023-spring-Aberdeen-1-Internet-Hotterrier-Guide
-Internet Hotterrier Guide
+# 2023-spring-Aberdeen-1-Internet-Meme-Guide
+Internet Meme Guide
 
 
 #### Introduction
