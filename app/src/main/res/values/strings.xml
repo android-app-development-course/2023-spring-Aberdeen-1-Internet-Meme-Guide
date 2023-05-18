@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppDevelopment</string>
+    <string name="test">TEST</string>
+    <string name="nbsp"><![CDATA[&nbsp;]]></string>
+</resources>
