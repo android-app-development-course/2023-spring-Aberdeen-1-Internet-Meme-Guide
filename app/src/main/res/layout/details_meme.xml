@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/只因太美_梗意思_图片"
+        android:layout_width="538dp"
+        android:layout_height="327dp"
+        android:layout_marginTop="696dp"
+        android:left="26dp"
+        android:top="125dp"
+        app:layout_constraintEnd_toEndOf="@+id/只因太美_梗来源"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/只因太美_梗来源"
+        app:layout_constraintTop_toBottomOf="@+id/只因太美_梗来源_内容" />
+
+    <TextView
+        android:id="@+id/梗详情返回键_只因太美"
+        android:layout_width="71dp"
+        android:layout_height="78dp"
+        android:gravity="center"
+        android:left="0dp"
+        android:lineHeight="20dp"
+        android:top="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/梗详情标题_只因太美"
+        android:layout_width="890dp"
+        android:layout_height="78dp"
+        android:background="#FF75F9FD"
+        android:gravity="center"
+        android:left="0dp"
+        android:lineHeight="20dp"
+        android:text="只因太美"
+        android:top="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/梗详情返回键_只因太美"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/只因太美_详情"
+        android:layout_width="207dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="80dp"
+        android:gravity="left"
+        android:left="21dp"
+        android:text="详情："
+        android:textColor="#FF000000"
+        android:textSize="60sp"
+        android:top="76dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/梗详情标题_只因太美" />
+
+    <View
+        android:id="@+id/只因太美_梗来源"
+        android:layout_width="822dp"
+        android:layout_height="1311dp"
+        android:layout_marginTop="212dp"
+        android:background="#FFFFFFFF"
+        android:border-color="#FFBBBBBB"
+        android:border-width="1dp"
+        android:gravity="left"
+        android:left="-1dp"
+        android:lineHeight="20dp"
+        android:textColor="#FF333333"
+        android:textSize="16dp"
+        android:top="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/梗详情标题_只因太美" />
+
+    <TextView
+        android:id="@+id/只因太美_梗来源_标题"
+        android:layout_width="80dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="56dp"
+        android:gravity="left"
+        android:left="16dp"
+        android:text="梗来源："
+        android:textColor="#FF101010"
+        android:textSize="20dp"
+        android:top="12dp"
+        app:layout_constraintStart_toStartOf="@+id/只因太美_梗来源"
+        app:layout_constraintTop_toTopOf="@+id/只因太美_梗来源" />
+
+    <TextView
+        android:id="@+id/只因太美_梗来源_内容"
+        android:layout_width="635dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="108dp"
+        android:gravity="left"
+        android:left="-1dp"
+        android:text="  鸡你太美，是一句网络流行语，为2016年11月29日SWIN-S发布的歌曲《只因你太美》的空耳。出自于蔡徐坤在综艺节目《偶像练习生》之中的自我介绍表演。"
+        android:textColor="#FF000000"
+        android:textSize="14dp"
+        android:top="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/只因太美_梗来源"
+        app:layout_constraintStart_toStartOf="@+id/只因太美_梗来源"
+        app:layout_constraintTop_toTopOf="@+id/只因太美_梗来源" />
+
+    <ImageView
+        android:id="@+id/只因太美_梗来源_图片"
+        android:layout_width="538dp"
+        android:layout_height="327dp"
+        android:layout_marginTop="60dp"
+        android:left="26dp"
+        android:top="125dp"
+        app:layout_constraintEnd_toEndOf="@+id/只因太美_梗来源"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/只因太美_梗来源"
+        app:layout_constraintTop_toBottomOf="@+id/只因太美_梗来源_内容" />
+
+    <TextView
+        android:id="@+id/只因太美_梗意思_标题"
+        android:layout_width="80dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="636dp"
+        android:gravity="left"
+        android:left="16dp"
+        android:text="梗意思："
+        android:textColor="#FF101010"
+        android:textSize="20dp"
+        android:top="12dp"
+        app:layout_constraintStart_toStartOf="@+id/只因太美_梗来源"
+        app:layout_constraintTop_toTopOf="@+id/只因太美_梗来源" />
+
+    <TextView
+        android:layout_width="637dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="520dp"
+        android:gravity="left"
+        android:left="0dp"
+        android:text="   鸡你太美这个梗其实是只因你太美的这句歌词的谐音，这句歌词来自于蔡徐坤的歌曲《只因你太美》，这首歌曲的节奏较快，当快速说唱时，只因你太美这句歌词很容易听成谐音鸡你太美，引发广泛讨论，这个梗很快被大众网友所熟知。   蔡徐坤在演唱这首歌曲的时候，结合了篮球和舞蹈，槽点几多，每个元素都会被网友拿来恶搞。这段表演的的音乐是《只因你太美》在视频中正好出现在蔡徐坤转身扔掉篮球的那一刹那，歌词和画风突变的尬舞动作结合，场面非常有喜感。 "
+        android:textColor="#FF101010"
+        android:textSize="14dp"
+        android:top="376dp"
+        app:layout_constraintEnd_toEndOf="@+id/只因太美_梗来源"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/只因太美_梗来源"
+        app:layout_constraintTop_toBottomOf="@+id/只因太美_梗来源_内容" />
+
+    <View
+        android:id="@+id/梗详情底部栏"
+        android:layout_width="962dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="36dp"
+        android:background="#FFFFFFFF"
+        android:border-color="#FF1684FC"
+        android:border-width="1dp"
+        android:left="1dp"
+        android:radius="4dp"
+        android:top="737dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/只因太美_梗来源" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
