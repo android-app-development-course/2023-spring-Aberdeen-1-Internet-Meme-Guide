@@ -1,6 +1,7 @@
 package com.example.appdevelopment
 
 import android.os.Bundle
+import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -22,11 +23,14 @@ class explaination_memes : AppCompatActivity() {
 
             if (isExpanded) {
                 tvPanelContent.maxLines = Integer.MAX_VALUE
+                tvPanelContent.layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT
                 imgExpand.setImageResource(R.drawable.ic_arrow_up)
             } else {
-                tvPanelContent.maxLines = 3
+                tvPanelContent.maxLines = 10
+                tvPanelContent.layoutParams.height = resources.getDimensionPixelSize(R.dimen.text_height)
                 imgExpand.setImageResource(R.drawable.ic_arrow_down)
             }
+
         }
     }
 

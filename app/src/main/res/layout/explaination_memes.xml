@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/yysy_constraintLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <View
         android:id="@+id/view_header"
@@ -27,17 +27,17 @@
 
         <TextView
             android:id="@+id/tv_panel_content"
-            android:layout_width="317dp"
-            android:layout_height="24dp"
+            android:layout_width="272dp"
+            android:layout_height="20dp"
             android:layout_margin="8dp"
-            android:layout_marginTop="8dp"
-            android:maxLines="3"
+            android:maxLines="10"
             android:text="YYSY,全名叫有一说一，常用于表达自己观点前作为开头句使用"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.17"
+            app:layout_constraintHorizontal_bias="0.14"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintVertical_bias="0.041" />
 
         <ImageView
             android:id="@+id/img_expand"
@@ -45,9 +45,12 @@
             android:layout_height="24dp"
             android:layout_margin="8dp"
             android:src="@drawable/ic_arrow_down"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.573"
             app:layout_constraintStart_toEndOf="@+id/tv_panel_content"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.14" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
