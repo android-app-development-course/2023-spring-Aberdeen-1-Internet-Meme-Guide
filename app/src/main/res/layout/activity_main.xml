@@ -75,8 +75,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+
     <View
-        android:id="@+id/view"
+        android:id="@+id/搜索栏"
+        android:layout_width="308dp"
+        android:layout_height="36dp"
+        android:background="#FFFFFFFF"
+        android:gravity="center"
+        android:left="60dp"
+        android:lineHeight="20dp"
+        android:radius="20dp"
+        android:top="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/底部导航栏"
         android:layout_width="405dp"
         android:layout_height="58dp"
         android:background="#FFFFFFFF"
@@ -84,52 +100,34 @@
         android:top="728dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/avator"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:left="12dp"
-        android:radius="99dp"
-        android:top="58dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/avator" />
+        app:menu="@menu/bottom_navigation">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/postNaviBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/icons8_plus"
+            tools:contentDescription="Add Post" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <View
-        android:id="@+id/search_bar"
-        android:layout_width="308dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
-        android:background="#FFFFFFFF"
-        android:gravity="center"
-        android:left="60dp"
-        android:lineHeight="20dp"
-        android:radius="20dp"
-        android:top="55dp"
-        app:layout_constraintStart_toEndOf="@+id/avator"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/searchimage"
+        android:id="@+id/个人头像"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="280dp"
         android:background="#FF101010"
         android:left="64dp"
         android:radius="5dp"
         android:top="60dp"
-        app:layout_constraintEnd_toEndOf="@+id/search_bar"
-        app:layout_constraintStart_toStartOf="@+id/search_bar"
-        tools:layout_editor_absoluteY="25dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/搜索栏"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <View
-        android:id="@+id/scan"
+        android:id="@+id/搜索键"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_marginStart="276dp"
@@ -137,8 +135,9 @@
         android:background="#FF101010"
         android:left="328dp"
         android:top="60dp"
-        app:layout_constraintEnd_toEndOf="@+id/search_bar"
-        app:layout_constraintStart_toStartOf="@+id/search_bar"
+        app:layout_constraintEnd_toEndOf="@+id/搜索栏"
+        app:layout_constraintStart_toStartOf="@+id/搜索栏"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="25dp" />
 
     <TextView
@@ -152,6 +151,7 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.154"
         app:layout_constraintStart_toStartOf="@+id/imageView"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="93dp" />
 
 
