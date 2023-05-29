@@ -73,6 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_navigation">
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/postNaviBtn"
             android:layout_width="wrap_content"
@@ -81,8 +82,6 @@
             app:srcCompat="@drawable/icons8_plus"
             tools:contentDescription="Add Post" />
     </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

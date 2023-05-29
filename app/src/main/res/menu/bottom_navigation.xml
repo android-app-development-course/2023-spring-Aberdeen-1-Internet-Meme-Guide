@@ -3,13 +3,13 @@
     <item
         android:id="@+id/newsNaviBtn"
         android:enabled="true"
-        android:icon="@drawable/icons8__news"
+        android:icon="@drawable/icons8_home_page_50"
         android:title="主页"
         />
     <item
         android:id="@+id/passageNaviBtn"
         android:enabled="true"
-        android:icon="@drawable/icons8__post"
+        android:icon="@drawable/icons8_discover_50"
         android:title="发现"
         />
     <item
@@ -20,7 +20,7 @@
         android:id="@+id/insNaviBtn"
         android:enabled="true"
         android:title="消息"
-        android:icon="@drawable/icons8__ins"
+        android:icon="@drawable/icons8_message_50"
         />
     <item
         android:id="@+id/myNaviBtn"
