@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-    val yysy = findViewById<TextView>(R.id.有一说一)
+    val yysy = findViewById<TextView>(R.id.YYSY)
         yysy.setOnClickListener{
             val intent = Intent(this, explaination_memes::class.java)
             startActivity(intent)

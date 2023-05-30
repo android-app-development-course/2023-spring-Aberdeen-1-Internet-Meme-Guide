@@ -6,73 +6,154 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avator" />
+
     <TextView
-        android:id="@+id/家人们谁懂"
+        android:id="@+id/textView2"
         android:layout_width="378dp"
         android:layout_height="136dp"
         android:layout_marginTop="208dp"
+        android:background="#BF7777"
+        android:fontFamily="Arial"
         android:gravity="center"
         android:left="0dp"
         android:lineHeight="20dp"
-        android:text="家人们谁懂啊"
+        android:text="@string/nbsp"
+        android:textColor="#111111"
         android:textSize="14sp"
         android:top="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/近期热梗" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
-        android:id="@+id/近期热梗"
+        android:id="@+id/imageView"
         android:layout_width="412dp"
         android:layout_height="180dp"
+        android:layout_marginTop="72dp"
         android:left="0dp"
         android:radius="20dp"
+        android:src="@drawable/mainpage"
         android:top="0dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ContentDescription,MissingConstraints" />
 
     <TextView
         android:id="@+id/YYSY"
-        android:layout_width="154dp"
-        android:layout_height="59dp"
-        android:layout_marginBottom="40dp"
+        android:layout_width="226dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="28dp"
         android:gravity="center"
         android:left="163dp"
-        android:text="YYSY"
+        android:text="Y Y S Y"
+        android:textColor="#040303"
+        android:textSize="54sp"
         android:top="51dp"
-        app:layout_constraintBottom_toBottomOf="@+id/近期热梗"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintHorizontal_bias="0.827"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/有一说一"
+        android:id="@+id/textView3"
         android:layout_width="378dp"
         android:layout_height="136dp"
         android:layout_marginTop="28dp"
+        android:background="#BF7777"
+        android:fontFamily="Arial"
         android:gravity="center"
         android:left="0dp"
         android:lineHeight="20dp"
-        android:text="YYSY"
+        android:text="@string/app_name"
+        android:textColor="#FF101010"
         android:textSize="14sp"
         android:top="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/近期热梗" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <View
-        android:id="@+id/导航栏"
+
+    <EditText
+        android:id="@+id/搜索栏"
+        android:layout_width="316dp"
+        android:layout_height="39dp"
+        android:background="@drawable/searchkuang"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606" />
+
+    <ImageView
+        android:id="@+id/搜索图标"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/search"
+        app:layout_constraintStart_toStartOf="@+id/搜索栏"
+        app:layout_constraintTop_toTopOf="@+id/搜索栏"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/二维码扫描"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/scan"
+        app:layout_constraintEnd_toEndOf="@+id/搜索栏"
+        app:layout_constraintTop_toTopOf="@+id/搜索栏"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/底部导航栏"
         android:layout_width="405dp"
         android:layout_height="58dp"
+        android:background="#FFFFFFFF"
         android:left="0dp"
         android:top="728dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/postNaviBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/icons8_plus"
+            tools:contentDescription="Add Post" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/热梗"
+        android:layout_width="101dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:text="近期    热梗"
+        android:textColor="#040303"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
