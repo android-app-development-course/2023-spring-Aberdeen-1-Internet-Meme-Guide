@@ -5,28 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <View
         android:id="@+id/返回键"
-        android:layout_width="33dp"
-        android:layout_height="30dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fanhuijian"
         android:left="10dp"
         android:top="68dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/搜索栏"
-        android:layout_width="377dp"
-        android:layout_height="30dp"
-        android:gravity="left"
-        android:left="30dp"
-        android:radius="15dp"
-        android:text="你想知道的这里都有..."
-        android:textColor="#FF888888"
-        android:textSize="12dp"
-        android:top="64dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/返回键"
+        app:layout_constraintEnd_toStartOf="@+id/搜索框"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -36,6 +24,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="36dp"
         android:text="热门搜索"
+        app:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/返回键" />
 
@@ -46,6 +35,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="160dp"
         android:text="搜索历史"
+        app:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/热门搜索" />
 
@@ -56,8 +46,183 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="160dp"
         android:text="搜索发现"
+        app:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/搜索历史" />
+
+    <ImageView
+        android:id="@+id/搜索框"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/searchchaung" />
+
+    <EditText
+        android:id="@+id/输入框"
+        android:layout_width="314dp"
+        android:layout_height="17dp"
+        android:background="#FFFFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/搜索框"
+        app:layout_constraintEnd_toEndOf="@+id/搜索框"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toEndOf="@+id/返回键"
+        app:layout_constraintTop_toTopOf="@+id/搜索框" />
+
+    <View
+        android:id="@+id/searchbutton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/searchv"
+        android:left="328dp"
+        android:top="68dp"
+        app:layout_constraintBottom_toBottomOf="@+id/搜索框"
+        app:layout_constraintEnd_toEndOf="@+id/搜索框"
+        app:layout_constraintTop_toTopOf="@+id/搜索框" />
+
+    <TextView
+        android:id="@+id/马保国"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="164dp"
+        android:text="马保国"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toStartOf="@+id/闪电五连鞭"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/热门搜索" />
+
+    <TextView
+        android:id="@+id/闪电五连鞭"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="92dp"
+        android:text="闪电五连鞭"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/热门搜索" />
+
+    <TextView
+        android:id="@+id/只因太美"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="只因太美"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toStartOf="@+id/蔡徐坤"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/马保国" />
+
+    <TextView
+        android:id="@+id/蔡徐坤"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="120dp"
+        android:text="蔡徐坤"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/闪电五连鞭" />
+
+    <TextView
+        android:id="@+id/家人们"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="家人们，谁懂啊？"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/只因太美" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="132dp"
+        android:text="yysy"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/蔡徐坤" />
+
+    <TextView
+        android:id="@+id/明日方舟"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="明日方舟"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toStartOf="@+id/yysy2"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/搜索历史" />
+
+    <TextView
+        android:id="@+id/yysy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="132dp"
+        android:text="yysy"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/搜索历史" />
+
+    <TextView
+        android:id="@+id/原神"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="原神"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toStartOf="@+id/泰裤辣"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/明日方舟" />
+
+    <TextView
+        android:id="@+id/泰裤辣"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="120dp"
+        android:text="泰裤辣"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yysy2" />
+
+    <TextView
+        android:id="@+id/谁懂啊"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="家人们，谁懂啊？"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toStartOf="@+id/丁真"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/原神" />
+
+    <TextView
+        android:id="@+id/丁真"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="132dp"
+        android:text="丁真"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/泰裤辣" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
