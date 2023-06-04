@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item
-        android:id="@+id/newsNaviBtn"
+        android:id="@+id/homeNaviBtn"
         android:enabled="true"
         android:icon="@drawable/icons8_home_page_50"
         android:title="主页"
         />
     <item
-        android:id="@+id/passageNaviBtn"
+        android:id="@+id/findNaviBtn"
         android:enabled="true"
         android:icon="@drawable/icons8_discover_50"
         android:title="发现"
@@ -17,7 +18,7 @@
         android:title=""
         />
     <item
-        android:id="@+id/insNaviBtn"
+        android:id="@+id/messageNaviBtn"
         android:enabled="true"
         android:title="消息"
         android:icon="@drawable/icons8_message_50"

@@ -4,16 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/yysy_constraintLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
+    <View
+        android:id="@+id/view_header"
+        android:layout_width="410dp"
+        android:layout_height="733dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="389dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="96dp"
+        android:background="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_header"
+        tools:ignore="NotSibling,UnknownId">
+
+
+        <TextView
+            android:id="@+id/tv_panel_content"
+            android:layout_width="272dp"
+            android:layout_height="20dp"
+            android:layout_margin="8dp"
+            android:maxLines="10"
+            android:text="YYSY,全名叫有一说一，常用于表达自己观点前作为开头句使用"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.041" />
+
+        <ImageView
+            android:id="@+id/img_expand"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_arrow_down"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.573"
+            app:layout_constraintStart_toEndOf="@+id/tv_panel_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.14" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/底部导航栏"
-        android:layout_width="411dp"
-        android:layout_height="57dp"
+        android:id="@+id/bottom_navigation"
+        android:layout_width="405dp"
+        android:layout_height="58dp"
         android:background="#FFFFFFFF"
         android:left="0dp"
         android:top="728dp"
+        app:itemIconTint="@drawable/bottom_navigation_color"
+        app:itemTextColor="@drawable/bottom_navigation_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,100 +76,5 @@
             app:srcCompat="@drawable/icons8_plus"
             tools:contentDescription="Add Post" />
     </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-    <ImageView
-        android:id="@+id/pic1"
-        android:layout_width="411dp"
-        android:layout_height="209dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pic1" />
-
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="59dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="164dp"
-        android:text="YYDS"
-        android:textSize="16dp"
-        android:textStyle="bold"
-        app:fontFamily="sans-serif-black"
-        app:layout_constraintEnd_toStartOf="@+id/text2"
-        app:layout_constraintTop_toBottomOf="@+id/pic1" />
-
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="290万浏览"
-        android:textSize="14dp"
-        app:layout_constraintTop_toBottomOf="@+id/pic1"
-        tools:layout_editor_absoluteX="286dp" />
-
-    <ImageView
-        android:id="@+id/pi2"
-        android:layout_width="192dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="60dp"
-        app:layout_constraintEnd_toStartOf="@+id/pic3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pic1"
-        app:srcCompat="@drawable/pic2" />
-
-    <ImageView
-        android:id="@+id/pic3"
-        android:layout_width="187dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pic1"
-        app:srcCompat="@drawable/pic3" />
-
-    <TextView
-        android:id="@+id/text3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="48dp"
-        android:text="泰裤辣"
-        android:textSize="16dp"
-        android:textStyle="bold"
-        app:fontFamily="sans-serif-black"
-        app:layout_constraintEnd_toStartOf="@+id/text4"
-        app:layout_constraintTop_toBottomOf="@+id/pi2" />
-
-    <TextView
-        android:id="@+id/text4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="34万浏览"
-        app:layout_constraintTop_toBottomOf="@+id/pi2"
-        tools:layout_editor_absoluteX="121dp" />
-
-    <TextView
-        android:id="@+id/text5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="36dp"
-        android:text="只因太美"
-        android:textSize="16dp"
-        android:textStyle="bold"
-        app:fontFamily="sans-serif-black"
-        app:layout_constraintEnd_toStartOf="@+id/text6"
-        app:layout_constraintTop_toBottomOf="@+id/pic3" />
-
-    <TextView
-        android:id="@+id/text6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="21万浏览"
-        app:layout_constraintTop_toBottomOf="@+id/pic3"
-        tools:layout_editor_absoluteX="328dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
