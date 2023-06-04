@@ -20,24 +20,28 @@
         android:textColor="#111111"
         android:textSize="14sp"
         android:top="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/底部导航栏"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="412dp"
         android:layout_height="180dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="68dp"
         android:left="0dp"
         android:radius="20dp"
         android:src="@drawable/mainpage"
         android:top="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/底部导航栏"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002"
         tools:ignore="ContentDescription,MissingConstraints" />
 
     <TextView
@@ -56,6 +60,7 @@
         app:layout_constraintHorizontal_bias="0.937"
         app:layout_constraintStart_toStartOf="parent" />
 
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="378dp"
@@ -70,11 +75,12 @@
         android:textColor="#FF101010"
         android:textSize="14sp"
         android:top="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/底部导航栏"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.038" />
 
     <View
         android:id="@+id/搜索栏"
