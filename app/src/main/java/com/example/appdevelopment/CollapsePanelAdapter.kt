@@ -62,17 +62,17 @@ class CollapsePanelAdapter(private val panels: List<CollapsePanel>) :
                 // 根据 panel.id 跳转到不同的 activity 或 fragment
                 when (panel.id) {
                     1 -> {
-                        val intent = Intent(itemView.context, details_meme::class.java)
+                        val intent = Intent(itemView.context, detail_meme2::class.java)
                         itemView.context.startActivity(intent)
                     }
                     2 -> {
-                        val intent = Intent(itemView.context, explaination_memes::class.java)
+                        val intent = Intent(itemView.context, detail_meme3::class.java)
                         itemView.context.startActivity(intent)
                     }
                     // 可以继续添加其他 id 对应的跳转逻辑
                     else -> {
                         // 默认跳转到其他页面
-                        val intent = Intent(itemView.context, details_meme::class.java)
+                        val intent = Intent(itemView.context, explaination_memes::class.java)
                         itemView.context.startActivity(intent)
                     }
                 }
