@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="410dp"
+        android:layout_height="35dp"
+        android:background="#FF75F9FD"
+        android:gravity="center"
+        android:left="0dp"
+        android:lineHeight="20dp"
+        android:top="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/goback" />
+
+    <View
+        android:id="@+id/泰裤辣_梗来源"
+        android:layout_width="395dp"
+        android:layout_height="292dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFFFF"
+        android:gravity="left"
+        android:left="-1dp"
+        android:lineHeight="20dp"
+        android:textColor="#FF333333"
+        android:textSize="16dp"
+        android:top="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/泰裤辣_梗来源_标题"
+        android:layout_width="94dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:gravity="left"
+        android:left="16dp"
+        android:text="梗来源："
+        android:textColor="#FF101010"
+        android:textSize="20dp"
+        android:top="12dp"
+        app:layout_constraintStart_toStartOf="@+id/泰裤辣_梗来源"
+        app:layout_constraintTop_toTopOf="@+id/泰裤辣_梗来源" />
+
+    <TextView
+        android:id="@+id/泰裤辣_梗来源_内容"
+        android:layout_width="370dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="56dp"
+        android:gravity="left"
+        android:left="-1dp"
+        android:text="  泰裤辣”是一个近期流行的网络梗，源自于小鬼王琳凯在演唱会上说的一句话：“我是一个特别固执的人，我从来不会在意别人跟我说什么，让我去做。
+如果你也可以像我一样，那我觉得这件事情太酷了。”由于他的口音和发音，听起来像是“泰裤辣”，就被网友们戏称为“泰裤辣梗 "
+        android:textColor="#FF000000"
+        android:textSize="14dp"
+        android:top="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/泰裤辣_梗来源"
+        app:layout_constraintStart_toStartOf="@+id/泰裤辣_梗来源"
+        app:layout_constraintTop_toTopOf="@+id/泰裤辣_梗来源" />
+
+    <ImageView
+        android:id="@+id/yysy_梗来源_图片"
+        android:layout_width="171dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:left="26dp"
+        android:top="125dp"
+        app:layout_constraintBottom_toBottomOf="@+id/泰裤辣_梗来源"
+        app:layout_constraintEnd_toEndOf="@+id/泰裤辣_梗来源"
+        app:layout_constraintStart_toStartOf="@+id/泰裤辣_梗来源"
+        app:layout_constraintTop_toBottomOf="@+id/泰裤辣_梗来源_内容"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tkl1" />
+
+    <TextView
+        android:id="@+id/泰裤辣_梗意思_标题"
+        android:layout_width="82dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:gravity="left"
+        android:left="16dp"
+        android:text="梗意思："
+        android:textColor="#FF101010"
+        android:textSize="20dp"
+        android:top="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/泰裤辣_梗来源"
+        app:layout_constraintTop_toBottomOf="@+id/泰裤辣_梗来源" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="406dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="40dp"
+        android:gravity="left"
+        android:left="0dp"
+        android:text="由于他的口音和发音，听起来像是“泰裤辣”，就被网友们戏称为“泰裤辣梗”。
+这个梗很快就在抖音、微博、贴吧等平台上火了起来，很多人用它来表达自己的态度或者调侃别人。 有些人还把它和华晨宇的“鸡你太美”梗结合起来，创造出了新的整活方式。例如：“世界上有五种辣，微辣，中辣，特辣和变态辣，第五种辣是什么？‘泰裤辣’。”
+这个梗虽然看似无厘头，但其实也反映了一种积极向上的精神"
+        android:textColor="#FF101010"
+        android:textSize="14dp"
+        android:top="376dp"
+        app:layout_constraintEnd_toEndOf="@+id/泰裤辣_梗来源"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="@+id/泰裤辣_梗来源"
+        app:layout_constraintTop_toBottomOf="@+id/泰裤辣_梗来源" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="yysy"
+        android:textSize="20sp"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="343dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/tkl2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
