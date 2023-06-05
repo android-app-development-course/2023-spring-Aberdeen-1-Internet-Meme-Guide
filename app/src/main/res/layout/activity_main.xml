@@ -201,8 +201,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_panels"
-        android:layout_width="408dp"
-        android:layout_height="422dp"
+        android:layout_width="413dp"
+        android:layout_height="406dp"
         android:layout_marginTop="2dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
