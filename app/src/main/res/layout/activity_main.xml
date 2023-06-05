@@ -192,6 +192,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
         android:text="近期    热梗"
+        android:fontFamily="@font/gang"
         android:textColor="#040303"
         android:textSize="50sp"
         android:textStyle="bold"
