@@ -3,11 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/2023-spring-Aberdeen-1-Internet-Meme-Guide/app/src/main/res/drawable/ rounded_corners.xml" value="0.2835" />
+        <entry key="..\:/2023-spring-Aberdeen-1-Internet-Meme-Guide/app/src/main/res/layout/Mypage_main.xml" value="0.18614130434782608" />
         <entry key="..\:/2023-spring-Aberdeen-1-Internet-Meme-Guide/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/2023-spring-Aberdeen-1-Internet-Meme-Guide/app/src/main/res/layout/details_meme.xml" value="0.359375" />
         <entry key="..\:/2023-spring-Aberdeen-1-Internet-Meme-Guide/app/src/main/res/layout/explaination_memes.xml" value="0.3333333333333333" />
         <entry key="..\:/2023-spring-Aberdeen-1-Internet-Meme-Guide/app/src/main/res/layout/item_list.xml" value="0.18333333333333332" />
+        <entry key="..\:/2023-spring-Aberdeen-1-Internet-Meme-Guide/app/src/main/res/layout/mypage_main.xml" value="0.3333333333333333" />
         <entry key="..\:/2023-spring-Aberdeen-1-Internet-Meme-Guide/app/src/main/res/layout/search_page.xml" value="0.16666666666666666" />
+        <entry key="..\:/2023-spring-Aberdeen-1-Internet-Meme-Guide/app/src/main/res/menu/bottom_navigation.xml" value="0.34270833333333334" />
+        <entry key="..\:/2023-spring-Aberdeen-1-Internet-Meme-Guide/app/src/main/res/menu/mypage_navigation.xml" value="0.34270833333333334" />
         <entry key="..\:/AppDevelopment/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1915" />
         <entry key="..\:/AppDevelopment/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1915" />
         <entry key="..\:/AppDevelopment/app/src/main/res/layout/activity_main.xml" value="0.2" />

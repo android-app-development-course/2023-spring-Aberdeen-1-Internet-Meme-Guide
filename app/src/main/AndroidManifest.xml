@@ -25,6 +25,7 @@
         </activity>
         <activity android:name=".explaination_memes" />
         <activity android:name=".details_meme" />
+        <activity android:name=".mypage_main" />
 
     </application>
 
