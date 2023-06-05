@@ -8,10 +8,10 @@
 
     <View
         android:id="@+id/view_header"
-        android:layout_width="410dp"
-        android:layout_height="733dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -45,7 +45,7 @@
             android:layout_height="24dp"
             android:layout_margin="8dp"
             android:src="@drawable/ic_arrow_down"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/view_header"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.573"
             app:layout_constraintStart_toEndOf="@+id/tv_panel_content"
@@ -62,7 +62,7 @@
         android:background="#FFFFFFFF"
         app:itemIconTint="@drawable/bottom_navigation_color"
         app:itemTextColor="@drawable/bottom_navigation_color"
-        app:layout_constraintBottom_toBottomOf="@+id/view_header"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="DuplicateIds"
@@ -83,6 +83,7 @@
         android:layout_height="209dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
         app:srcCompat="@drawable/pic1" />
 
     <TextView
