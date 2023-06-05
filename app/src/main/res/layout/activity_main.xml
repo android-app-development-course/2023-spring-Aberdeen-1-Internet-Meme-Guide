@@ -16,44 +16,44 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/avator" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/折叠栏2"
-        android:layout_width="389dp"
-        android:layout_height="88dp"
-        android:background="#fff"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/折叠栏1"
-        tools:ignore="NotSibling,UnknownId">
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/折叠栏2"-->
+<!--        android:layout_width="389dp"-->
+<!--        android:layout_height="88dp"-->
+<!--        android:background="#fff"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/折叠栏1"-->
+<!--        tools:ignore="NotSibling,UnknownId">-->
 
 
-        <TextView
-            android:id="@+id/tv_panel_content2"
-            android:layout_width="272dp"
-            android:layout_height="20dp"
-            android:layout_margin="8dp"
-            android:maxLines="10"
-            android:text="该梗出自抖音上的不露脸特效西瓜条，不露脸的特效拍摄的内容可以是五花八门的"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.14"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.041" />
+<!--        <TextView-->
+<!--            android:id="@+id/tv_panel_content2"-->
+<!--            android:layout_width="272dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:maxLines="10"-->
+<!--            android:text="该梗出自抖音上的不露脸特效西瓜条，不露脸的特效拍摄的内容可以是五花八门的"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.14"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.041" />-->
 
-        <ImageView
-            android:id="@+id/img_expand2"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginTop="8dp"
-            android:src="@drawable/ic_arrow_down"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.171"
-            app:layout_constraintStart_toEndOf="@+id/tv_panel_content2"
-            app:layout_constraintTop_toTopOf="parent" />
+<!--        <ImageView-->
+<!--            android:id="@+id/img_expand2"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:src="@drawable/ic_arrow_down"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.171"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/tv_panel_content2"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
     <ImageView
         android:id="@+id/imageView"
@@ -89,44 +89,44 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/折叠栏1"
-        android:layout_width="389dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="60dp"
-        android:background="#fff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:ignore="NotSibling,UnknownId">
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/折叠栏1"-->
+<!--        android:layout_width="389dp"-->
+<!--        android:layout_height="88dp"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:background="#fff"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView"-->
+<!--        tools:ignore="NotSibling,UnknownId">-->
 
 
-        <TextView
-            android:id="@+id/tv_panel_content"
-            android:layout_width="272dp"
-            android:layout_height="20dp"
-            android:layout_margin="8dp"
-            android:maxLines="10"
-            android:text="YYSY,全名叫有一说一，常用于表达自己观点前作为开头句使用"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.14"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.041" />
+<!--        <TextView-->
+<!--            android:id="@+id/tv_panel_content"-->
+<!--            android:layout_width="272dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:maxLines="10"-->
+<!--            android:text="YYSY,全名叫有一说一，常用于表达自己观点前作为开头句使用"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.14"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.041" />-->
 
-        <ImageView
-            android:id="@+id/img_expand"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginTop="8dp"
-            android:src="@drawable/ic_arrow_down"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.185"
-            app:layout_constraintStart_toEndOf="@+id/tv_panel_content"
-            app:layout_constraintTop_toTopOf="parent" />
+<!--        <ImageView-->
+<!--            android:id="@+id/img_expand"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:src="@drawable/ic_arrow_down"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.185"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/tv_panel_content"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
     <EditText
         android:id="@+id/搜索栏"
@@ -168,8 +168,6 @@
         android:layout_width="405dp"
         android:layout_height="58dp"
         android:background="#FFFFFFFF"
-        android:left="0dp"
-        android:top="728dp"
         app:itemIconTint="@drawable/bottom_navigation_color"
         app:itemTextColor="@drawable/bottom_navigation_color"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -200,6 +198,17 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_panels"
+        android:layout_width="408dp"
+        android:layout_height="422dp"
+        android:layout_marginTop="2dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
