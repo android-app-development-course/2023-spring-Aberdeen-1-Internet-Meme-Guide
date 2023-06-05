@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mypage_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imageView7"
+            android:layout_width="96dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="92dp"
+            android:src="@drawable/profile"
+            app:riv_corner_radius_bottom_left="16dp"
+            app:riv_corner_radius_bottom_right="16dp"
+            app:riv_corner_radius_top_left="16dp"
+            app:riv_corner_radius_top_right="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="PingFangSC-regular"
+        android:gravity="left"
+        android:text="陈哥"
+        android:textSize="20sp"
+        android:textColor="#FF101010"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="PingFangSC-regular"
+        android:gravity="left"
+        android:text="关注 1145"
+        android:textColor="#FF101010"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.314"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="PingFangSC-regular"
+        android:gravity="left"
+        android:text="收藏 14"
+        android:textColor="#FF101010"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/UserName"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/UserName"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="366dp"
+        android:layout_height="198dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="405dp"
+        android:layout_height="58dp"
+        android:background="#FFFFFFFF"
+        app:itemIconTint="@drawable/bottom_navigation_color"
+        app:itemTextColor="@drawable/bottom_navigation_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation"
+        tools:ignore="DuplicateIds">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/postNaviBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/icons8_plus"
+            tools:contentDescription="Add Post" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    <Button
+        android:id="@+id/my_work"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_user"
+        android:paddingLeft="16dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@android:color/black"
+        android:text="我的创作"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <Button
+        android:id="@+id/my_draft"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_draft"
+        android:paddingStart="16dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@android:color/black"
+        android:text="草稿箱"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/my_work" />
+
+    <Button
+        android:id="@+id/my_history"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_history"
+        android:paddingStart="16dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@android:color/black"
+        android:text="浏览历史"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/my_draft" />
+
+    <Button
+        android:id="@+id/my_like"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_thumb_up"
+        android:paddingStart="16dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@android:color/black"
+        android:text="我的点赞"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/my_history" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
