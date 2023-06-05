@@ -132,6 +132,7 @@
         android:id="@+id/搜索栏"
         android:layout_width="316dp"
         android:layout_height="39dp"
+        android:layout_marginTop="18dp"
         android:background="@drawable/searchkuang"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
