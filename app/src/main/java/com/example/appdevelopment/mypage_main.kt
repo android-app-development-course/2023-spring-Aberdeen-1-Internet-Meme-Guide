@@ -18,7 +18,7 @@ class mypage_main : AppCompatActivity() {
         val button1 = findViewById<Button>(R.id.my_work)
         button1.setOnClickListener {
             // 处理“我的创作”按钮点击事件的代码
-            val intent = Intent(this, explaination_memes::class.java)
+            val intent = Intent(this, mypage_work::class.java)
             startActivity(intent)
         }
 

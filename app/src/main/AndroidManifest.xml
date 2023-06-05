@@ -27,6 +27,8 @@
         <activity android:name=".details_meme" />
         <activity android:name=".mypage_main" />
         <activity android:name=".search_page"/>
+        <activity android:name=".mypage_work"/>
+
 
 
     </application>
