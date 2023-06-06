@@ -83,7 +83,7 @@ class mypage_main : AppCompatActivity() {
                     true
                 }
                 R.id.messageNaviBtn -> {
-                    val intent = Intent(this, explaination_memes::class.java)
+                    val intent = Intent(this, message_memes::class.java)
                     startActivity(intent)
                     true
                 }
