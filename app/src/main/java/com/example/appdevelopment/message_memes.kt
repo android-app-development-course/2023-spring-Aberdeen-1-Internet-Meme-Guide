@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class message_memes : AppCompatActivity(){
     private lateinit var recyclerView: RecyclerView
@@ -25,8 +26,14 @@ class message_memes : AppCompatActivity(){
 
         recyclerView = findViewById(R.id.message_rv)
         val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
+        val postnavbtn = findViewById<FloatingActionButton>(R.id.postNaviBtn)
         recyclerView.adapter = MessageMemesAdapter(messageMemes)
         recyclerView.layoutManager = LinearLayoutManager(this)
+
+        postnavbtn.setOnClickListener {
+            val intent = Intent(this, deliver::class.java)
+            startActivity(intent)
+        }
 
         navView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
@@ -47,6 +54,11 @@ class message_memes : AppCompatActivity(){
                 }
                 R.id.myNaviBtn -> {
                     val intent = Intent(this, mypage_main::class.java)
+                    startActivity(intent)
+                    true
+                }
+                R.id.postNaviBtn -> {
+                    val intent = Intent(this, deliver::class.java)
                     startActivity(intent)
                     true
                 }
