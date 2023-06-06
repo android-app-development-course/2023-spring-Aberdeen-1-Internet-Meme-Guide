@@ -8,34 +8,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class details_meme: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.explaination_memes)
-        val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
+        setContentView(R.layout.details_meme)
 
-        navView.setOnNavigationItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.homeNaviBtn -> {
-                    val intent = Intent(this, MainActivity::class.java)
-                    startActivity(intent)
-                    true
-                }
-                R.id.findNaviBtn -> {
-                    val intent = Intent(this, explaination_memes::class.java)
-                    startActivity(intent)
-                    true
-                }
-                R.id.messageNaviBtn -> {
-                    val intent = Intent(this, explaination_memes::class.java)
-                    startActivity(intent)
-                    true
-                }
-                R.id.myNaviBtn -> {
-                    val intent = Intent(this, mypage_main::class.java)
-                    startActivity(intent)
-                    true
-                }
-                else -> false
-            }
-        }
 
     }
 }

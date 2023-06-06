@@ -1,13 +1,16 @@
 package com.example.appdevelopment
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 
-class ExplainationMemesAdapter(private val dataSet: List<ExplainationMemes>) :
+class ExplainationMemesAdapter(private val dataSet: List<ExplainationMemes>,private val context: Context) :
     RecyclerView.Adapter<ExplainationMemesAdapter.ViewHolder>() {
 
     // 定义ViewHolder类
@@ -40,6 +43,32 @@ class ExplainationMemesAdapter(private val dataSet: List<ExplainationMemes>) :
         holder.pi3ImageView.setImageResource(data.srcCompat2)
         holder.text5TextView.text = data.name2
         holder.text6TextView.text = data.view2
+        holder.pi2ImageView.setOnClickListener {
+            // 打开相应页面
+            if (data.id == 1) {
+                val intent = Intent(context, detail_meme3::class.java)
+                context.startActivity(intent)
+            } else if (data.id == 2) {
+                val intent = Intent(context, detail_meme2::class.java)
+                context.startActivity(intent)
+            } else if (data.id == 3) {
+                val intent = Intent(context, details_meme::class.java)
+                context.startActivity(intent)
+            }
+        }
+        holder.pi3ImageView.setOnClickListener {
+            if (data.id == 1) {
+                val intent = Intent(context, detail_meme3::class.java)
+                context.startActivity(intent)
+            } else if (data.id == 2) {
+                val intent = Intent(context, detail_meme2::class.java)
+                context.startActivity(intent)
+            } else if (data.id == 3) {
+                val intent = Intent(context, details_meme::class.java)
+                context.startActivity(intent)
+            }
+        }
+
     }
 
     // 返回数据集大小（由LayoutManager所调用）
