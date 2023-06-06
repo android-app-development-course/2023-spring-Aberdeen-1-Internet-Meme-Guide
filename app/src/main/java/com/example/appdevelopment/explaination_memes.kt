@@ -21,7 +21,7 @@ class explaination_memes : AppCompatActivity() {
         val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
         val postnavbtn = findViewById<FloatingActionButton>(R.id.postNaviBtn)
         val imgbtn = findViewById<ImageView>(R.id.pic1)
-        val postnavbtn = findViewById<FloatingActionButton>(R.id.postNaviBtn)
+//        val postnavbtn = findViewById<FloatingActionButton>(R.id.postNaviBtn)
 
             explainationMemes.add(ExplainationMemes(1, R.drawable.pic2, "泰裤辣", "34万浏览",R.drawable.pic3, "只因你太美", "27万浏览"))
             explainationMemes.add(ExplainationMemes(2, R.drawable.powerman, "大力王", "29万浏览" ,R.drawable.xiaodaidai, "小呆呆", "22万浏览"))
