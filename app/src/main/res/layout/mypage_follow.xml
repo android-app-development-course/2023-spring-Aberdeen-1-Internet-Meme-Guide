@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mypage_follow">
+
+    <View
+        android:id="@+id/followers"
+        android:layout_width="122dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/follow_favorite"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_favorite"
+        android:gravity="start|center_vertical"
+        android:paddingStart="16dp"
+        android:text="特别关注"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/follow_list"
+
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_list"
+        android:gravity="start|center_vertical"
+        android:paddingStart="16dp"
+        android:text="关注列表"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/follow_favorite" />
+
+    <Button
+        android:id="@+id/follow_friends"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_friend"
+        android:gravity="start|center_vertical"
+        android:paddingStart="16dp"
+        android:text="我的朋友"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/follow_list" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/follow_recycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/followers"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_default="percent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:background="#FFFFFFFF"
+        app:itemIconTint="@drawable/bottom_navigation_color"
+        app:itemTextColor="@drawable/bottom_navigation_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation"
+        tools:ignore="DuplicateIds">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/postNaviBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/icons8_plus"
+            tools:contentDescription="Add Post" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

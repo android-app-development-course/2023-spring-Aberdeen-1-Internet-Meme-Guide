@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@drawable/item_background">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/follow_profile"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        app:riv_corner_radius_bottom_left="10dp"
+        app:riv_corner_radius_bottom_right="10dp"
+        app:riv_corner_radius_top_left="10dp"
+        app:riv_corner_radius_top_right="10dp" />
+
+    <TextView
+        android:id="@+id/follow_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/follow_profile"
+        android:layout_alignBottom="@+id/follow_profile"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@+id/follow_profile"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/follow_button"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_button_background"
+        android:text="已关注"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+</RelativeLayout>

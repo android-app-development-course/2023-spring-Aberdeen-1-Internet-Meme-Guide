@@ -43,6 +43,7 @@
 
 
     <TextView
+        android:id="@+id/follows"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="PingFangSC-regular"
@@ -158,7 +159,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:background="@android:color/transparent"
-        android:drawableLeft="@drawable/ic_thumb_up"
+        android:drawableLeft="@drawable/ic_liked"
         android:paddingStart="16dp"
         android:gravity="start|center_vertical"
         android:textColor="@android:color/black"

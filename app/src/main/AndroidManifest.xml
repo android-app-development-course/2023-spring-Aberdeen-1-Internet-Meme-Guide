@@ -14,9 +14,23 @@
         android:theme="@style/Theme.AppDevelopment"
         tools:targetApi="31">
         <activity
+            android:name=".mypage_follow"
+            android:exported="false" />
+        <activity
+            android:name=".mypage_history"
+            android:exported="false" />
+        <activity
+            android:name=".mypage_liked"
+            android:exported="false" />
+        <activity
+            android:name=".mypage_draft"
+            android:exported="false" />
+        <activity
+            android:name=".mypage_profile"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,11 +40,13 @@
         <activity android:name=".explaination_memes" />
         <activity android:name=".details_meme" />
         <activity android:name=".mypage_main" />
-        <activity android:name=".search_page"/>
-        <activity android:name=".mypage_work"/>
+        <activity android:name=".search_page" />
+        <activity android:name=".mypage_work" />
+        <activity android:name=".mypage_collect" />
 
-
-
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
-package com.example.appdevelopment
 
+
+package com.example.appdevelopment
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,26 +13,26 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
-class mypage_work : AppCompatActivity() {
+class mypage_history : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.mypage_work)
+        setContentView(R.layout.mypage_history)
         val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
 
-        //RecyclerView 主体部分
-        val recyclerView = findViewById<RecyclerView>(R.id.work_recycler)
+//RecyclerView 主体部分
+        val recyclerView = findViewById<RecyclerView>(R.id.history_recycler)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         //添加数据
         val items = listOf(
-            WorkItem("陈哥", 1145,14),
-            WorkItem("速速",0,0),
-            WorkItem("锁涡", 19, 19),
-            WorkItem("牛牛", 8, 16)
+            HistoryItem("陈哥", 1145,14),
+            HistoryItem("速速",0,0),
+            HistoryItem("锁涡", 19, 19),
+            HistoryItem("牛牛", 8, 16)
         )
 
-        val adapter = WorkAdapter(items)
+        val adapter = HistoryAdapter(items)
         recyclerView.adapter = adapter
 
 
@@ -70,13 +71,13 @@ class mypage_work : AppCompatActivity() {
 
 
 //单元里包含的数据类
-data class WorkItem(val title: String, val likes: Int, val comments: Int)
+data class HistoryItem(val title: String, val likes: Int, val comments: Int)
 
 //recyclerview 适配器
-class WorkAdapter(private val items: List<WorkItem>) : RecyclerView.Adapter<WorkAdapter.ViewHolder>() {
+class HistoryAdapter(private val items: List<HistoryItem>) : RecyclerView.Adapter<HistoryAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.mypage_work_unit, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.mypage_history_unit, parent, false)
         return ViewHolder(view)
     }
 
