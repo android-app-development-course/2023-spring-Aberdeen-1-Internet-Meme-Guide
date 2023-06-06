@@ -22,7 +22,7 @@
     <TextView
         android:id="@+id/text10"
         android:layout_width="wrap_content"
-        android:layout_height="22sp"
+        android:layout_height="24sp"
         android:layout_marginStart="9dp"
         android:layout_marginTop="19dp"
         android:text="TextView"
@@ -32,7 +32,7 @@
     <TextView
         android:id="@+id/text20"
         android:layout_width="wrap_content"
-        android:layout_height="17sp"
+        android:layout_height="16sp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
         android:text="TextView"
@@ -44,7 +44,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#3A3B3C"
+        android:background="#ccc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

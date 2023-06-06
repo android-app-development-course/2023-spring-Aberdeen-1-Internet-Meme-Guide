@@ -14,8 +14,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/collapse_panel"
-        android:layout_width="368dp"
-        android:layout_height="127dp"
+        android:layout_width="389dp"
+        android:layout_height="182dp"
         android:background="@drawable/tiezhi"
         tools:layout_editor_absoluteY="8dp">
 
@@ -23,26 +23,26 @@
             android:id="@+id/tv_panel_content"
             android:layout_width="283dp"
             android:layout_height="42dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="68dp"
             android:maxLines="10"
             android:text="textView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.317"
+            app:layout_constraintHorizontal_bias="0.349"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
 
         <ImageView
             android:id="@+id/img_expand"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="25dp"
+            android:layout_height="19dp"
             android:src="@drawable/ic_arrow_down"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.264"
+            app:layout_constraintHorizontal_bias="0.25"
             app:layout_constraintStart_toEndOf="@+id/tv_panel_content"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.495"
+            app:layout_constraintVertical_bias="0.417"
             tools:ignore="MissingConstraints" />
 
         <TextView
@@ -51,13 +51,15 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="TextView"
-            app:fontFamily="sans-serif-black"
+            android:textColor="#303060"
+            android:textSize="21sp"
+            app:fontFamily="@font/gang"
             app:layout_constraintBottom_toTopOf="@+id/tv_panel_content"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintHorizontal_bias="0.102"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.705" />
+            app:layout_constraintVertical_bias="0.611" />
 
         <TextView
             android:id="@+id/textView19"
@@ -68,10 +70,9 @@
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.144"
+            app:layout_constraintHorizontal_bias="0.322"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_panel_content"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_panel_content" />
 
         <TextView
             android:id="@+id/textView20"
@@ -81,17 +82,17 @@
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.312"
+            app:layout_constraintHorizontal_bias="0.149"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_panel_content"
-            app:layout_constraintVertical_bias="0.25" />
+            app:layout_constraintVertical_bias="0.553" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="52dp"
+        android:layout_height="2dp"
         android:background="#FFFFFF" />
 
 </LinearLayout>
