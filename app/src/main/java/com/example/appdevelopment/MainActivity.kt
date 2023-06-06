@@ -31,8 +31,6 @@ class MainActivity : AppCompatActivity() {
         val postnavbtn = findViewById<FloatingActionButton>(R.id.postNaviBtn)
 
 
-
-
         // 加入折叠栏数据
         collapsePanels.add(CollapsePanel(1, "YYSY,全名叫有一说一，常用于表达自己观点前作为开头句使用"))
         collapsePanels.add(CollapsePanel(2, "该梗出自抖音上的不露脸特效西瓜条，不露脸的特效拍摄的内容可以是五花八门的"))
