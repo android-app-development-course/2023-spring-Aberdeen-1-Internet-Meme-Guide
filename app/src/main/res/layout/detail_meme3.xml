@@ -128,7 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:text="yysy"
+        android:text="泰裤辣"
         android:textSize="20sp"
         app:fontFamily="sans-serif-black"
         app:layout_constraintBottom_toBottomOf="@+id/view"
