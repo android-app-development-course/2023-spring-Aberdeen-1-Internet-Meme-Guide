@@ -19,7 +19,6 @@ class explaination_memes : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.explaination_memes)
         val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
-        val postnavbtn = findViewById<FloatingActionButton>(R.id.postNaviBtn)
         val imgbtn = findViewById<ImageView>(R.id.pic1)
 //        val postnavbtn = findViewById<FloatingActionButton>(R.id.postNaviBtn)
 
