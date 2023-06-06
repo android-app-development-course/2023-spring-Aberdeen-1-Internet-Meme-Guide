@@ -29,6 +29,7 @@
         <activity android:name=".search_page"/>
         <activity android:name=".detail_meme2"/>
         <activity android:name=".detail_meme3"/>
+        <activity android:name=".deliver"/>
 
 
         <meta-data
