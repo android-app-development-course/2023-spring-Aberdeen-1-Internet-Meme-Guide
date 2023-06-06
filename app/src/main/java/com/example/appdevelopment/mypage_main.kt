@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.makeramen.roundedimageview.RoundedImageView
 
 
@@ -16,6 +17,7 @@ class mypage_main : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.mypage_main)
         val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
+        val postnavbtn = findViewById<FloatingActionButton>(R.id.postNaviBtn)
 
         // 处理“头像”点击事件的代码
         val imageView = findViewById<RoundedImageView>(R.id.imageView7)
@@ -67,6 +69,11 @@ class mypage_main : AppCompatActivity() {
             startActivity(intent)
         }
 
+        postnavbtn.setOnClickListener {
+            val intent = Intent(this, deliver::class.java)
+            startActivity(intent)
+        }
+
 
 
 
@@ -83,12 +90,17 @@ class mypage_main : AppCompatActivity() {
                     true
                 }
                 R.id.messageNaviBtn -> {
-                    val intent = Intent(this, explaination_memes::class.java)
+                    val intent = Intent(this, message_memes::class.java)
                     startActivity(intent)
                     true
                 }
                 R.id.myNaviBtn -> {
                     val intent = Intent(this, mypage_main::class.java)
+                    startActivity(intent)
+                    true
+                }
+                R.id.postNaviBtn -> {
+                    val intent = Intent(this, deliver::class.java)
                     startActivity(intent)
                     true
                 }

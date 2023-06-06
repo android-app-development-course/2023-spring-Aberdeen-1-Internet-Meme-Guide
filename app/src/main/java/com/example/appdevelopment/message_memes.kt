@@ -2,51 +2,38 @@ package com.example.appdevelopment
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class explaination_memes : AppCompatActivity() {
+class message_memes : AppCompatActivity(){
     private lateinit var recyclerView: RecyclerView
-    private val explainationMemes = mutableListOf<ExplainationMemes>()
+    private val messageMemes = mutableListOf<MessageMemes>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.explaination_memes)
+        setContentView(R.layout.messages)
+            messageMemes.add(MessageMemes(1, R.drawable.pic10,"熊", "你好，我是熊"))
+            messageMemes.add(MessageMemes(2, R.drawable.pic11, "鱼王", "你好，我是鱼王"))
+            messageMemes.add(MessageMemes(3, R.drawable.pic12, "咚咚咚", "我是咚咚咚，来自未来"))
+            messageMemes.add(MessageMemes(4, R.drawable.pic13, "渔王", "你好，我才是真的渔王。"))
+            messageMemes.add(MessageMemes(5, R.drawable.pic14, "小熊", "这里是熊的小号。"))
+            messageMemes.add(MessageMemes(6, R.drawable.pic15, "丁真", "我是丁真，笑容纯真。"))
+            messageMemes.add(MessageMemes(7, R.drawable.pic16, "大熊", "这里有丹的小秘密出售"))
+
+
+        recyclerView = findViewById(R.id.message_rv)
         val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
         val postnavbtn = findViewById<FloatingActionButton>(R.id.postNaviBtn)
-        val imgbtn = findViewById<ImageView>(R.id.pic1)
-
-            explainationMemes.add(ExplainationMemes(1, R.drawable.pic2, "泰裤辣", "34万浏览",R.drawable.pic3, "只因你太美", "27万浏览"))
-            explainationMemes.add(ExplainationMemes(2, R.drawable.powerman, "大力王", "29万浏览" ,R.drawable.xiaodaidai, "小呆呆", "22万浏览"))
-            explainationMemes.add(ExplainationMemes(3, R.drawable.wujing, "吴京", "15万浏览" ,R.drawable.wujing, "YYSY", "235万浏览"))
-            // 可以添加更多数据
-
-
-        recyclerView = findViewById(R.id.explaination_rv)
-        recyclerView.adapter = ExplainationMemesAdapter(explainationMemes, this)
+        recyclerView.adapter = MessageMemesAdapter(messageMemes)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
-        imgbtn.setOnClickListener {
-            val intent = Intent(this, detail_meme2::class.java)
-            startActivity(intent)
-        }
-
         postnavbtn.setOnClickListener {
             val intent = Intent(this, deliver::class.java)
             startActivity(intent)
         }
-
-        postnavbtn.setOnClickListener {
-            val intent = Intent(this, deliver::class.java)
-            startActivity(intent)
-        }
-
 
         navView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
@@ -70,7 +57,6 @@ class explaination_memes : AppCompatActivity() {
                     startActivity(intent)
                     true
                 }
-
                 R.id.postNaviBtn -> {
                     val intent = Intent(this, deliver::class.java)
                     startActivity(intent)
@@ -79,8 +65,5 @@ class explaination_memes : AppCompatActivity() {
                 else -> false
             }
         }
-
-
     }
-
 }

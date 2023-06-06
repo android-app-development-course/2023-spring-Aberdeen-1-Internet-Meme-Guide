@@ -269,10 +269,21 @@
         app:layout_constraintTop_toBottomOf="@+id/pic1"
         app:layout_constraintVertical_bias="0.0" />
 
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="272dp"
+        android:background="#303F9F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_header" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/explaination_rv"
-        android:layout_width="match_parent"
-        android:layout_height="409dp"
+        android:layout_width="414dp"
+        android:layout_height="383dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

@@ -41,6 +41,12 @@
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteY="29dp" />
 
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#313133" />
 
 </LinearLayout>
