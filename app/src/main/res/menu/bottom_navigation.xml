@@ -11,7 +11,7 @@
         android:id="@+id/findNaviBtn"
         android:enabled="true"
         android:icon="@drawable/icons8_discover_50"
-        android:title="发现"
+        android:title=""
         />
     <item
         android:enabled="false"

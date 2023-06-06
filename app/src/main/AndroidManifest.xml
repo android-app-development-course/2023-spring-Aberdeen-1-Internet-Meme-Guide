@@ -45,7 +45,7 @@
         <activity android:name=".mypage_collect" />
         <activity android:name=".detail_meme2"/>
         <activity android:name=".detail_meme3"/>
-        <activity android:name=".message_memes"/>
+        <activity android:name=".deliver"/>
 
 
         <meta-data

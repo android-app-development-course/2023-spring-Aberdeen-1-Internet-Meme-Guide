@@ -7,6 +7,7 @@ data class ExplainationMemes(
     val view1: String,
     val srcCompat2: Int,
     val name2: String,
-    val view2: String
+    val view2: String,
+
 
 )

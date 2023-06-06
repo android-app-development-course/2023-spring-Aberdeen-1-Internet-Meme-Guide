@@ -40,36 +40,28 @@
         android:id="@+id/pic1"
         android:layout_width="411dp"
         android:layout_height="209dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="10dp"
         app:srcCompat="@drawable/pic1" />
 
     <TextView
         android:id="@+id/text1"
         android:layout_width="59dp"
         android:layout_height="23dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="164dp"
         android:text="YYSY"
         android:textSize="16dp"
         android:textStyle="bold"
         app:fontFamily="sans-serif-black"
         app:layout_constraintEnd_toStartOf="@+id/text2"
+        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pic1" />
 
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="64dp"
-        android:text="290万浏览"
-        android:textSize="14dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pic1" />
-
-<!--    <ImageView-->
+    <!--    <ImageView-->
 <!--        android:id="@+id/pi2"-->
 <!--        android:layout_width="192dp"-->
 <!--        android:layout_height="130dp"-->
@@ -264,13 +256,29 @@
 <!--        app:layout_constraintStart_toEndOf="@+id/imageView5"-->
 <!--        app:layout_constraintTop_toBottomOf="@+id/浏览4" />-->
 
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:text="290万浏览"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/explaination_rv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic1"
+        app:layout_constraintVertical_bias="0.0" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/explaination_rv"
         android:layout_width="match_parent"
-        android:layout_height="410dp"
+        android:layout_height="409dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic1"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

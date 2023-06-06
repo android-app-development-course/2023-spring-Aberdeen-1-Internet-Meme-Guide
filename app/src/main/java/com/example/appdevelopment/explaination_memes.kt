@@ -18,16 +18,22 @@ class explaination_memes : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.explaination_memes)
         val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
+        val imgbtn = findViewById<ImageView>(R.id.pic1)
 
             explainationMemes.add(ExplainationMemes(1, R.drawable.pic2, "泰裤辣", "34万浏览",R.drawable.pic3, "只因你太美", "27万浏览"))
-            explainationMemes.add(ExplainationMemes(2, R.drawable.powerman, "大力王", "29万浏览", R.drawable.xiaodaidai, "小呆呆", "22万浏览"))
-            explainationMemes.add(ExplainationMemes(3, R.drawable.wujing, "吴京", "15万浏览", R.drawable.wujing, "YYSY", "235万浏览"))
+            explainationMemes.add(ExplainationMemes(2, R.drawable.powerman, "大力王", "29万浏览" ,R.drawable.xiaodaidai, "小呆呆", "22万浏览"))
+            explainationMemes.add(ExplainationMemes(3, R.drawable.wujing, "吴京", "15万浏览" ,R.drawable.wujing, "YYSY", "235万浏览"))
             // 可以添加更多数据
 
 
         recyclerView = findViewById(R.id.explaination_rv)
-        recyclerView.adapter = ExplainationMemesAdapter(explainationMemes)
+        recyclerView.adapter = ExplainationMemesAdapter(explainationMemes, this)
         recyclerView.layoutManager = LinearLayoutManager(this)
+
+        imgbtn.setOnClickListener {
+            val intent = Intent(this, detail_meme2::class.java)
+            startActivity(intent)
+        }
 
 
         navView.setOnNavigationItemSelectedListener { item ->

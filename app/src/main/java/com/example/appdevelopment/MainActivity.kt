@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class MainActivity : AppCompatActivity() {
@@ -27,6 +28,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
         val yysy = findViewById<TextView>(R.id.YYSY)
+        val postnavbtn = findViewById<FloatingActionButton>(R.id.postNaviBtn)
+
+
+
+
         // 加入折叠栏数据
         collapsePanels.add(CollapsePanel(1, "YYSY,全名叫有一说一，常用于表达自己观点前作为开头句使用"))
         collapsePanels.add(CollapsePanel(2, "该梗出自抖音上的不露脸特效西瓜条，不露脸的特效拍摄的内容可以是五花八门的"))
@@ -52,44 +58,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        postnavbtn.setOnClickListener {
+            val intent = Intent(this, deliver::class.java)
+            startActivity(intent)
+        }
 
         yysy.setOnClickListener {
             val intent = Intent(this, explaination_memes::class.java)
             startActivity(intent)
         }
-//        tvPanelContent = findViewById(R.id.tv_panel_content)
-//        imgExpand = findViewById(R.id.img_expand)
-//        tvPanelContent2 = findViewById(R.id.tv_panel_content2)
-//        imgExpand2 = findViewById(R.id.img_expand2)
 
-//        imgExpand.setOnClickListener {
-//            isExpanded = !isExpanded
-//
-//            if (isExpanded) {
-//                tvPanelContent.maxLines = Integer.MAX_VALUE
-//                tvPanelContent.layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT
-//                imgExpand.setImageResource(R.drawable.ic_arrow_up)
-//            } else {
-//                tvPanelContent.maxLines = 10
-//                tvPanelContent.layoutParams.height = resources.getDimensionPixelSize(R.dimen.text_height)
-//                imgExpand.setImageResource(R.drawable.ic_arrow_down)
-//            }
-//
-//        }
-//        imgExpand2.setOnClickListener {
-//            isExpanded = !isExpanded
-//
-//            if (isExpanded) {
-//                tvPanelContent2.maxLines = Integer.MAX_VALUE
-//                tvPanelContent2.layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT
-//                imgExpand2.setImageResource(R.drawable.ic_arrow_up)
-//            } else {
-//                tvPanelContent2.maxLines = 10
-//                tvPanelContent2.layoutParams.height = resources.getDimensionPixelSize(R.dimen.text_height)
-//                imgExpand2.setImageResource(R.drawable.ic_arrow_down)
-//            }
-//
-//        }
         //底部导航栏
         navView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
@@ -113,6 +91,12 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                     true
                 }
+                R.id.postNaviBtn -> {
+                    val intent = Intent(this, deliver::class.java)
+                    startActivity(intent)
+                    true
+                }
+
                 else -> false
             }
         }
