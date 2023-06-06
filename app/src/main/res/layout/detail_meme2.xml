@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="410dp"
+        android:layout_height="35dp"
+        android:background="#FF75F9FD"
+        android:gravity="center"
+        android:left="0dp"
+        android:lineHeight="20dp"
+        android:top="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/goback" />
+
+    <View
+        android:id="@+id/yysy_梗来源"
+        android:layout_width="397dp"
+        android:layout_height="257dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFFFF"
+        android:gravity="left"
+        android:left="-1dp"
+        android:lineHeight="20dp"
+        android:textColor="#FF333333"
+        android:textSize="16dp"
+        android:top="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/yysy_梗来源_标题"
+        android:layout_width="94dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:gravity="left"
+        android:left="16dp"
+        android:text="梗来源："
+        android:textColor="#FF101010"
+        android:textSize="20dp"
+        android:top="12dp"
+        app:layout_constraintStart_toStartOf="@+id/yysy_梗来源"
+        app:layout_constraintTop_toTopOf="@+id/yysy_梗来源" />
+
+    <TextView
+        android:id="@+id/yysy_梗来源_内容"
+        android:layout_width="371dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="56dp"
+        android:gravity="left"
+        android:left="-1dp"
+        android:text="  yysy是“有一说一”的拼音减缩，来自于英雄联盟主播炫神的梗，炫神经常会在网络上使用的一句口头禅，然后被网友们耳濡目染多了，也就学会了他的腔调了"
+        android:textColor="#FF000000"
+        android:textSize="14dp"
+        android:top="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/yysy_梗来源"
+        app:layout_constraintStart_toStartOf="@+id/yysy_梗来源"
+        app:layout_constraintTop_toTopOf="@+id/yysy_梗来源" />
+
+    <ImageView
+        android:id="@+id/yysy_梗来源_图片"
+        android:layout_width="145dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="8dp"
+        android:left="26dp"
+        android:top="125dp"
+        app:layout_constraintBottom_toBottomOf="@+id/yysy_梗来源"
+        app:layout_constraintEnd_toEndOf="@+id/yysy_梗来源"
+        app:layout_constraintStart_toStartOf="@+id/yysy_梗来源"
+        app:layout_constraintTop_toBottomOf="@+id/yysy_梗来源_内容"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/yysy1" />
+
+    <TextView
+        android:id="@+id/yysy_梗意思_标题"
+        android:layout_width="82dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:gravity="left"
+        android:left="16dp"
+        android:text="梗意思："
+        android:textColor="#FF101010"
+        android:textSize="20dp"
+        android:top="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/yysy_梗来源"
+        app:layout_constraintTop_toBottomOf="@+id/yysy_梗来源" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="404dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="36dp"
+        android:gravity="left"
+        android:left="0dp"
+        android:text="主要是说认可某人的说法，但是现在主要是一种调侃或者是嘲讽了。有一说一这个梗火了之后，网友们就很流行以有一说一作为开头来发表观点，还有就是在各类回复中，直接来一句“yysy，确实”。
+        现如今，很多人开始用拼音首字母来代替自己想要表达的意思，这是一种在零零后群体中比较流行的字母缩写流，例如“啊我死了”被说成“awsl”、“yygq” ：阴阳怪气、“zqsg”：真情实感、“dbq”：对不起、“cqy”：处Q友/求扩列等等。"
+        android:textColor="#FF101010"
+        android:textSize="14dp"
+        android:top="376dp"
+        app:layout_constraintEnd_toEndOf="@+id/yysy_梗来源"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="@+id/yysy_梗来源"
+        app:layout_constraintTop_toBottomOf="@+id/yysy_梗来源" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="394dp"
+        android:layout_height="178dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/yysy2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="yysy"
+        android:textSize="20sp"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
