@@ -32,10 +32,12 @@ class CollapsePanelAdapter(private val panels: List<CollapsePanel>) :
         private val tvPanelContent: TextView = itemView.findViewById(R.id.tv_panel_content)
         private val imgExpand: ImageView = itemView.findViewById(R.id.img_expand)
         private val panelContainer: LinearLayout = itemView.findViewById(R.id.panel_container)
+        private val tittle: TextView = itemView.findViewById(R.id.tittle)
 
         fun bind(panel: CollapsePanel) {
             tvPanelContent.text = panel.content
             tvPanelContent.ellipsize = TextUtils.TruncateAt.END
+            tittle.text = panel.tittle
             val Expandbtn = imgExpand
             Expandbtn.setOnClickListener {
                 panel.isExpanded = !panel.isExpanded

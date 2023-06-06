@@ -5,6 +5,8 @@
     android:id="@+id/panel_container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+
     android:background="#fff"
     android:orientation="vertical"
     android:paddingVertical="8dp"
@@ -12,41 +14,59 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/collapse_panel"
-        android:layout_width="match_parent"
-        android:layout_height="83dp"
-        android:background="#fff">
+        android:layout_width="368dp"
+        android:layout_height="127dp"
+        android:background="#FFFFFF"
+        tools:layout_editor_absoluteY="8dp">
 
         <TextView
             android:id="@+id/tv_panel_content"
-            android:layout_width="280dp"
-            android:layout_height="60dp"
-            android:layout_marginEnd="24dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="#302F2F"
             android:maxLines="10"
             android:text=""
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/img_expand"
-            app:layout_constraintHorizontal_bias="1.0"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.478"
             tools:ignore="MissingConstraints" />
 
         <ImageView
             android:id="@+id/img_expand"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_marginEnd="44dp"
             android:src="@drawable/ic_arrow_down"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="29dp" />
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_panel_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.495"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="TextView"
+            app:fontFamily="sans-serif-black"
+            app:layout_constraintBottom_toTopOf="@+id/tv_panel_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.006"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#313133" />
+        android:layout_height="52dp"
+        android:background="#FFFFFF" />
 
 </LinearLayout>
