@@ -2,6 +2,7 @@ package com.example.appdevelopment
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.AlarmClock
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -15,6 +16,7 @@ class message_memes : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.messages)
+        val userName = intent.getStringExtra(AlarmClock.EXTRA_MESSAGE) ?: "陈哥"
             messageMemes.add(MessageMemes(1, R.drawable.pic10,"熊", "你好，我是熊"))
             messageMemes.add(MessageMemes(2, R.drawable.pic11, "鱼王", "你好，我是鱼王"))
             messageMemes.add(MessageMemes(3, R.drawable.pic12, "咚咚咚", "我是咚咚咚，来自未来"))
@@ -38,27 +40,32 @@ class message_memes : AppCompatActivity(){
         navView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.homeNaviBtn -> {
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, MainActivity::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }
                 R.id.findNaviBtn -> {
-                    val intent = Intent(this, explaination_memes::class.java)
+                    val intent = Intent(this, explaination_memes::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }
                 R.id.messageNaviBtn -> {
-                    val intent = Intent(this, message_memes::class.java)
+                    val intent = Intent(this, message_memes::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }
                 R.id.myNaviBtn -> {
-                    val intent = Intent(this, mypage_main::class.java)
+                    val intent = Intent(this, mypage_main::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }
                 R.id.postNaviBtn -> {
-                    val intent = Intent(this, deliver::class.java)
+                    val intent = Intent(this, deliver::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }

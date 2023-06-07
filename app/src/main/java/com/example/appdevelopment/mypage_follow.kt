@@ -3,6 +3,7 @@ package com.example.appdevelopment
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.AlarmClock
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -23,6 +24,7 @@ class mypage_follow : AppCompatActivity() {
         setContentView(R.layout.mypage_follow)
         val recyclerView: RecyclerView = findViewById(R.id.follow_recycler)
         val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
+        val userName = intent.getStringExtra(AlarmClock.EXTRA_MESSAGE) ?: "陈哥"
 
 
 
@@ -85,7 +87,8 @@ class mypage_follow : AppCompatActivity() {
                     true
                 }
                 R.id.myNaviBtn -> {
-                    val intent = Intent(this, mypage_main::class.java)
+                    val intent = Intent(this, mypage_main::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }

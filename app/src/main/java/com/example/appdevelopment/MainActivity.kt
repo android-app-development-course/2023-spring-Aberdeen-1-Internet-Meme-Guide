@@ -2,6 +2,7 @@ package com.example.appdevelopment
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.AlarmClock
 import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.ImageView
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
         val yysy = findViewById<TextView>(R.id.YYSY)
         val postnavbtn = findViewById<FloatingActionButton>(R.id.postNaviBtn)
+        val userName = intent.getStringExtra(AlarmClock.EXTRA_MESSAGE) ?: "pqpq"
 
 
         // 加入折叠栏数据
@@ -61,17 +63,20 @@ class MainActivity : AppCompatActivity() {
         // 设置搜索栏的点击事件监听器
         mSearchEditText.setOnClickListener {
             // 当搜索栏被点击时调用此方法
-            val intent = Intent(this, search_page::class.java)
+            val intent = Intent(this, search_page::class.java).apply {
+                putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
             startActivity(intent)
         }
 
         postnavbtn.setOnClickListener {
-            val intent = Intent(this, deliver::class.java)
+            val intent = Intent(this, deliver::class.java).apply {
+                putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
             startActivity(intent)
         }
 
         yysy.setOnClickListener {
-            val intent = Intent(this, explaination_memes::class.java)
+            val intent = Intent(this, explaination_memes::class.java).apply {
+                putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
             startActivity(intent)
         }
 
@@ -79,27 +84,36 @@ class MainActivity : AppCompatActivity() {
         navView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.homeNaviBtn -> {
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, MainActivity::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }
                 R.id.findNaviBtn -> {
-                    val intent = Intent(this, explaination_memes::class.java)
+                    val intent = Intent(this, explaination_memes::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }
                 R.id.messageNaviBtn -> {
-                    val intent = Intent(this, message_memes::class.java)
+                    val intent = Intent(this, message_memes::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }
                 R.id.myNaviBtn -> {
-                    val intent = Intent(this, mypage_main::class.java)
+                    val intent = if (userName == "pqpq") {
+                        Intent(this, LoginActivity::class.java)
+                    } else {
+                        Intent(this, mypage_main::class.java).apply {
+                            putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
+                    }
                     startActivity(intent)
                     true
                 }
                 R.id.postNaviBtn -> {
-                    val intent = Intent(this, deliver::class.java)
+                    val intent = Intent(this, deliver::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }
