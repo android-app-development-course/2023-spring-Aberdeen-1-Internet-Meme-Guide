@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -25,12 +26,18 @@ class mypage_liked : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         //添加数据
-        val items = listOf(
-            LikedItem("哥们在这里", 1145,14),
-            LikedItem("说唱",0,0),
-            LikedItem("你好", 19, 19),
-            LikedItem("升龙", 8, 16)
-        )
+        val items = (0 until 3).flatMap {listOf(
+            LikedItem("陈哥与管人痴的解析与构思", 8, 16,
+                R.drawable.meme_youxi_3,R.drawable.meme_youxi_1,R.drawable.meme_youxi_2),
+            LikedItem("小呆呆是真没意思", 1145,14,
+                R.drawable.meme_xiaodaidai_2,R.drawable.meme_xiaodaidai_1,R.drawable.meme_xiaodaidai_3),
+            LikedItem("火爆全网的“happy猫”，到底是只什么猫？ ",0,0,
+                R.drawable.meme_happycat_1,R.drawable.meme_happycat_2,R.drawable.avator),
+            LikedItem("泰裤辣是什么意思", 19, 19,
+                R.drawable.meme_taikula,R.drawable.meme_taikula,R.drawable.meme_taikula),
+            LikedItem("陈哥与管人痴的解析与构思", 8, 16,
+                R.drawable.meme_youxi_3,R.drawable.meme_youxi_1,R.drawable.meme_youxi_2)
+        )}
 
         val adapter = LikedAdapter(items)
         recyclerView.adapter = adapter
@@ -70,8 +77,9 @@ class mypage_liked : AppCompatActivity() {
 }
 
 
+
 //单元里包含的数据类
-data class LikedItem(val title: String, val likes: Int, val comments: Int)
+data class LikedItem(val title: String, val likes: Int, val comments: Int,val ResId_1: Int,val ResId_2: Int,val ResId_3: Int)
 
 //recyclerview 适配器
 class LikedAdapter(private val items: List<LikedItem>) : RecyclerView.Adapter<LikedAdapter.ViewHolder>() {
@@ -86,6 +94,9 @@ class LikedAdapter(private val items: List<LikedItem>) : RecyclerView.Adapter<Li
         holder.titleView.text = item.title
         holder.likesView.text = item.likes.toString()
         holder.commentsView.text = item.comments.toString()
+        holder.ImageView1.setImageResource(item.ResId_1)
+        holder.ImageView2.setImageResource(item.ResId_2)
+        holder.ImageView3.setImageResource(item.ResId_3)
     }
 
     override fun getItemCount(): Int {
@@ -96,5 +107,8 @@ class LikedAdapter(private val items: List<LikedItem>) : RecyclerView.Adapter<Li
         val titleView: TextView = itemView.findViewById(R.id.title)
         val likesView: TextView = itemView.findViewById(R.id.likes)
         val commentsView: TextView = itemView.findViewById(R.id.comments)
+        val ImageView1: ImageView = itemView.findViewById(R.id.liked_image1)
+        val ImageView2: ImageView = itemView.findViewById(R.id.liked_image2)
+        val ImageView3: ImageView = itemView.findViewById(R.id.liked_image3)
     }
 }
