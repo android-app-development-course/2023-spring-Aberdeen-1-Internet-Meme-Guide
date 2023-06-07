@@ -24,7 +24,7 @@ class explaination_memes : AppCompatActivity() {
 
             explainationMemes.add(ExplainationMemes(1, R.drawable.pic2, "泰裤辣", "34万浏览",R.drawable.pic3, "只因你太美", "27万浏览"))
             explainationMemes.add(ExplainationMemes(2, R.drawable.powerman, "大力王", "29万浏览" ,R.drawable.xiaodaidai, "小呆呆", "22万浏览"))
-            explainationMemes.add(ExplainationMemes(3, R.drawable.wujing, "NSDD", "15万浏览" ,R.drawable.nsdd, "吴京", "235万浏览"))
+            explainationMemes.add(ExplainationMemes(3, R.drawable.wujing, "吴京", "15万浏览" ,R.drawable.nsdd, "NSDD", "235万浏览"))
             // 可以添加更多数据
 
 
