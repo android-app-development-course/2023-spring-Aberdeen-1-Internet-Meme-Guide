@@ -76,7 +76,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="发布"
+        android:text="保存"
         android:textColor="#26BFBF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -173,7 +173,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13"
         app:srcCompat="@drawable/editpic" />
 
-    <TextView
+    <EditText
         android:id="@+id/textView14"
         android:layout_width="363dp"
         android:layout_height="313dp"
@@ -270,7 +270,7 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="提交"
+        android:text="发布"
         android:fontFamily="@font/hupo"
         android:textColor="#F8F6F6"
         android:textSize="30sp"
