@@ -23,7 +23,7 @@ class mypage_main : AppCompatActivity() {
         val postnavbtn = findViewById<FloatingActionButton>(R.id.postNaviBtn)
         // 读取用户名
         val sharedPreferences = getSharedPreferences("username", Context.MODE_PRIVATE)
-        val userName = sharedPreferences.getString("username", "") // 如果不存在则返回空字符串
+        val userName = sharedPreferences.getString("username", "陈哥") // 如果不存在则返回空字符串
         val userNameTextView = findViewById<TextView>(R.id.UserName)
         userNameTextView.setText(userName)
 
