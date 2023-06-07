@@ -28,20 +28,13 @@
         android:textColor="@color/black"
         android:textSize="16sp" />
 
-
-    <Button
+    <ImageView
         android:id="@+id/follow_button"
-        android:layout_width="wrap_content"
-        android:layout_height="36dp"
-        android:layout_alignParentTop="true"
+        android:layout_width="106dp"
+        android:layout_height="58dp"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/custom_button_background"
-        android:text="已关注"
-        android:textColor="#000000"
-        android:textSize="14sp" />
+        android:layout_marginEnd="10dp"
+        app:srcCompat="@drawable/followers" />
+
 
 </RelativeLayout>
