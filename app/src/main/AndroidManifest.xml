@@ -15,22 +15,22 @@
         tools:targetApi="31">
         <activity
             android:name=".LoginActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".mypage_follow"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".mypage_history"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".mypage_liked"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".mypage_draft"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".mypage_profile"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -40,16 +40,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".explaination_memes" />
-        <activity android:name=".details_meme" />
-        <activity android:name=".mypage_main" />
-        <activity android:name=".search_page" />
-        <activity android:name=".mypage_work" />
-        <activity android:name=".mypage_collect" />
-        <activity android:name=".detail_meme2" />
-        <activity android:name=".detail_meme3" />
-        <activity android:name=".deliver" />
-        <activity android:name=".message_memes" />
+        <activity android:name=".explaination_memes"
+            android:exported="true" />
+        <activity android:name=".details_meme"
+            android:exported="true" />
+        <activity android:name=".mypage_main"
+            android:exported="true"/>
+        <activity android:name=".search_page"
+            android:exported="true"/>
+        <activity android:name=".mypage_work"
+            android:exported="true"/>
+        <activity android:name=".mypage_collect"
+            android:exported="true" />
+        <activity android:name=".detail_meme2"
+            android:exported="true" />
+        <activity android:name=".detail_meme3"
+            android:exported="true" />
+        <activity android:name=".deliver"
+            android:exported="true" />
+        <activity android:name=".message_memes"
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"
