@@ -26,10 +26,10 @@ class mypage_history : AppCompatActivity() {
 
         //添加数据
         val items = listOf(
-            HistoryItem("陈哥", 1145,14),
-            HistoryItem("速速",0,0),
-            HistoryItem("锁涡", 19, 19),
-            HistoryItem("牛牛", 8, 16)
+            HistoryItem("YYSY", 1145,14),
+            HistoryItem("显眼包",0,0),
+            HistoryItem("绝绝子", 19, 19),
+            HistoryItem("家人们，谁懂啊", 8, 16)
         )
 
         val adapter = HistoryAdapter(items)
