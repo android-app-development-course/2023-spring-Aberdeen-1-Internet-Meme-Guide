@@ -76,6 +76,10 @@ class CollapsePanelAdapter(private val panels: List<CollapsePanel>) :
                         val intent = Intent(itemView.context, detail_meme3::class.java)
                         itemView.context.startActivity(intent)
                     }
+                    3 -> {
+                        val intent = Intent(itemView.context, details_meme::class.java)
+                        itemView.context.startActivity(intent)
+                    }
                     // 可以继续添加其他 id 对应的跳转逻辑
                     else -> {
                         // 默认跳转到其他页面
