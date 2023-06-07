@@ -3,6 +3,7 @@ package com.example.appdevelopment
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.AlarmClock
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -20,6 +21,7 @@ class mypage_liked : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.mypage_liked)
         val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
+        val userName = intent.getStringExtra(AlarmClock.EXTRA_MESSAGE) ?: "陈哥"
 
 //RecyclerView 主体部分
         val recyclerView = findViewById<RecyclerView>(R.id.liked_recycler)
@@ -63,7 +65,8 @@ class mypage_liked : AppCompatActivity() {
                     true
                 }
                 R.id.myNaviBtn -> {
-                    val intent = Intent(this, mypage_main::class.java)
+                    val intent = Intent(this, mypage_main::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }

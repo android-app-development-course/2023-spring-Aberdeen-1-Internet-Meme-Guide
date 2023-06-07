@@ -14,6 +14,9 @@
         android:theme="@style/Theme.AppDevelopment"
         tools:targetApi="31">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".mypage_follow"
             android:exported="false" />
         <activity
@@ -43,11 +46,10 @@
         <activity android:name=".search_page" />
         <activity android:name=".mypage_work" />
         <activity android:name=".mypage_collect" />
-        <activity android:name=".detail_meme2"/>
-        <activity android:name=".detail_meme3"/>
-        <activity android:name=".deliver"/>
-        <activity android:name=".message_memes"/>
-
+        <activity android:name=".detail_meme2" />
+        <activity android:name=".detail_meme3" />
+        <activity android:name=".deliver" />
+        <activity android:name=".message_memes" />
 
         <meta-data
             android:name="preloaded_fonts"

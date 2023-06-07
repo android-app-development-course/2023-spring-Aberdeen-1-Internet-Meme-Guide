@@ -2,6 +2,7 @@ package com.example.appdevelopment
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.AlarmClock
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,6 +25,7 @@ class mypage_work : AppCompatActivity() {
         //RecyclerView 主体部分
         val recyclerView = findViewById<RecyclerView>(R.id.work_recycler)
         recyclerView.layoutManager = LinearLayoutManager(this)
+        val userName = intent.getStringExtra(AlarmClock.EXTRA_MESSAGE) ?: "陈哥"
 
         //添加数据
         val items = listOf(
@@ -61,7 +63,8 @@ class mypage_work : AppCompatActivity() {
                     true
                 }
                 R.id.myNaviBtn -> {
-                    val intent = Intent(this, mypage_main::class.java)
+                    val intent = Intent(this, mypage_main::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }

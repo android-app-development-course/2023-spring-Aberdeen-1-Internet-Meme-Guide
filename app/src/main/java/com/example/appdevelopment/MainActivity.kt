@@ -2,6 +2,7 @@ package com.example.appdevelopment
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.AlarmClock
 import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.ImageView
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
         val yysy = findViewById<TextView>(R.id.YYSY)
         val postnavbtn = findViewById<FloatingActionButton>(R.id.postNaviBtn)
+        val userName = intent.getStringExtra(AlarmClock.EXTRA_MESSAGE) ?: "pqpq"
 
 
         // 加入折叠栏数据
@@ -94,7 +96,12 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.myNaviBtn -> {
-                    val intent = Intent(this, mypage_main::class.java)
+                    val intent = if (userName == "pqpq") {
+                        Intent(this, LoginActivity::class.java)
+                    } else {
+                        Intent(this, mypage_main::class.java).apply {
+                            putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
+                    }
                     startActivity(intent)
                     true
                 }
