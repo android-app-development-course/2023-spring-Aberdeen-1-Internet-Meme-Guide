@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.ViewTreeObserver
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -106,7 +107,7 @@ class FollowListAdapter(private val items: List<FollowItem>) :
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val ImageView: RoundedImageView = itemView.findViewById(R.id.follow_profile)
         val usernameTextView: TextView = itemView.findViewById(R.id.follow_username)
-        val followButton: Button = itemView.findViewById(R.id.follow_button)
+        val followButton: ImageView = itemView.findViewById(R.id.follow_button)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
