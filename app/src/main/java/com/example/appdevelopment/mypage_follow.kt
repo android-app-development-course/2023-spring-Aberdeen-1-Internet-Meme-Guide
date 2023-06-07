@@ -49,11 +49,15 @@ class mypage_follow : AppCompatActivity() {
 
 
         //在recyclerview里面添加数据
-        val followItems = (0 until 10).flatMap {
+        val followItems = (0 until 5).flatMap {
             listOf(
                 FollowItem("Dan", R.drawable.danye),
+                FollowItem("陈子健", R.drawable.meme_youxi_1),
+                FollowItem("Chen", R.drawable.meme_youxi_2),
+                FollowItem("小马珍珠", R.drawable.dingzhen),
+                FollowItem("小鬼", R.drawable.meme_taikula),
+                FollowItem("猪猪侠", R.drawable.meme_xiaodaidai_2),
                 FollowItem("陈子健", R.drawable.dingzhen),
-                FollowItem("小马珍珠", R.drawable.avator)
                 // ...
             )
         }

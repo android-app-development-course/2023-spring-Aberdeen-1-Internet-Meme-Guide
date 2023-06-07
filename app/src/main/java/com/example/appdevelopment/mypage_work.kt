@@ -5,11 +5,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.makeramen.roundedimageview.RoundedImageView
 
 
 class mypage_work : AppCompatActivity() {
@@ -25,10 +27,14 @@ class mypage_work : AppCompatActivity() {
 
         //添加数据
         val items = listOf(
-            WorkItem("陈哥", 1145,14),
-            WorkItem("速速",0,0),
-            WorkItem("锁涡", 19, 19),
-            WorkItem("牛牛", 8, 16)
+            WorkItem("持枪小呆呆是啥梗", 1145,14,
+                R.drawable.meme_xiaodaidai_1,R.drawable.meme_xiaodaidai_2,R.drawable.meme_xiaodaidai_3),
+            WorkItem("为什么都说B站虚拟主播「东雪莲」是“罕见”？",0,0,
+                R.drawable.meme_dongxuelian_1,R.drawable.meme_dongxuelian_2,R.drawable.meme_dongxuelian_3),
+            WorkItem("泰裤辣是什么意思", 19, 19,
+                R.drawable.meme_taikula,R.drawable.meme_taikula,R.drawable.meme_taikula),
+            WorkItem("关于陈哥是管人痴这件事情", 8, 16,
+                R.drawable.meme_youxi_1,R.drawable.meme_youxi_2,R.drawable.meme_youxi_3)
         )
 
         val adapter = WorkAdapter(items)
@@ -70,7 +76,7 @@ class mypage_work : AppCompatActivity() {
 
 
 //单元里包含的数据类
-data class WorkItem(val title: String, val likes: Int, val comments: Int)
+data class WorkItem(val title: String, val likes: Int, val comments: Int,val ResId_1: Int,val ResId_2: Int,val ResId_3: Int)
 
 //recyclerview 适配器
 class WorkAdapter(private val items: List<WorkItem>) : RecyclerView.Adapter<WorkAdapter.ViewHolder>() {
@@ -85,6 +91,9 @@ class WorkAdapter(private val items: List<WorkItem>) : RecyclerView.Adapter<Work
         holder.titleView.text = item.title
         holder.likesView.text = item.likes.toString()
         holder.commentsView.text = item.comments.toString()
+        holder.ImageView1.setImageResource(item.ResId_1)
+        holder.ImageView2.setImageResource(item.ResId_2)
+        holder.ImageView3.setImageResource(item.ResId_3)
     }
 
     override fun getItemCount(): Int {
@@ -95,5 +104,8 @@ class WorkAdapter(private val items: List<WorkItem>) : RecyclerView.Adapter<Work
         val titleView: TextView = itemView.findViewById(R.id.title)
         val likesView: TextView = itemView.findViewById(R.id.likes)
         val commentsView: TextView = itemView.findViewById(R.id.comments)
+        val ImageView1: ImageView = itemView.findViewById(R.id.work_image1)
+        val ImageView2: ImageView = itemView.findViewById(R.id.work_image2)
+        val ImageView3: ImageView = itemView.findViewById(R.id.work_image3)
     }
 }
