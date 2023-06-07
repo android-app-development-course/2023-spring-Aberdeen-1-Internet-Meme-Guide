@@ -5,7 +5,7 @@
     android:id="@+id/explaination_container"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/explaination"
+    android:background="@drawable/faxianye"
     android:clickable="true"
     android:orientation="vertical"
     android:paddingVertical="8dp">
@@ -40,33 +40,18 @@
         android:text="TextView"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintTop_toBottomOf="@+id/pi3"
-        app:layout_constraintVertical_bias="0.26" />
-=======
         app:layout_constraintTop_toBottomOf="@+id/pi3" />
->>>>>>> 90d9ea6af6ffe62c6507cca21cda5cf712b1c806
 
     <TextView
         android:id="@+id/text4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="50dp"
-=======
         android:layout_marginStart="104dp"
         android:layout_marginTop="76dp"
->>>>>>> 90d9ea6af6ffe62c6507cca21cda5cf712b1c806
         android:text="TextView"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.876" />
-=======
         app:layout_constraintTop_toBottomOf="@+id/pi3" />
->>>>>>> 90d9ea6af6ffe62c6507cca21cda5cf712b1c806
 
     <TextView
         android:id="@+id/text5"
@@ -88,14 +73,7 @@
         android:text="TextView"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintHorizontal_bias="0.901"
-        app:layout_constraintStart_toEndOf="@+id/text4"
-        app:layout_constraintTop_toBottomOf="@+id/pi2"
-        app:layout_constraintVertical_bias="0.142" />
-=======
         app:layout_constraintTop_toBottomOf="@+id/pi2" />
->>>>>>> 90d9ea6af6ffe62c6507cca21cda5cf712b1c806
 
     <View
         android:layout_width="match_parent"
