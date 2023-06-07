@@ -63,6 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            app:backgroundTint="@color/lan"
             app:srcCompat="@drawable/icons8_plus"
             tools:contentDescription="Add Post" />
     </com.google.android.material.bottomnavigation.BottomNavigationView>
