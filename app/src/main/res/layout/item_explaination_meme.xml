@@ -35,10 +35,11 @@
         android:id="@+id/text3"
         android:layout_width="39dp"
         android:layout_height="14dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="30dp"
         android:text="TextView"
-        android:textSize="10sp"
+        android:textSize="9sp"
+        android:textColor="#727B80"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pi3" />
 
@@ -47,9 +48,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#727B80"
         android:text="TextView"
-        android:textSize="10sp"
+        android:textSize="9sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pi3" />
 
@@ -58,10 +60,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="232dp"
-        android:layout_marginTop="60dp"
-
+        android:layout_marginTop="30dp"
+        android:textColor="#727B80"
         android:text="TextView"
-        android:textSize="10sp"
+        android:textSize="9sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pi3" />
 
@@ -69,18 +71,19 @@
         android:id="@+id/text6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="70dp"
+        android:textColor="#727B80"
         android:text="TextView"
-        android:textSize="10sp"
+        android:textSize="9sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pi2" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="288dp"
-        android:background="#343435"
+        android:layout_marginTop="252dp"
+        android:background="#fff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
