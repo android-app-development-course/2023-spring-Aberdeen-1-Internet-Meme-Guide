@@ -47,7 +47,8 @@
         app:layout_constraintStart_toStartOf="@+id/password_edit_text"
         app:layout_constraintTop_toBottomOf="@+id/password_edit_text"
         app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintWidth_percent="0.4" />
+        app:layout_constraintWidth_percent="0.4"
+        app:backgroundTint="#7a72ff" />
 
     <EditText
         android:id="@+id/password_edit_text"
