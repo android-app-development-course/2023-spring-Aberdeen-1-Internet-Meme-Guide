@@ -40,17 +40,20 @@ class message_memes : AppCompatActivity(){
         navView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.homeNaviBtn -> {
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, MainActivity::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }
                 R.id.findNaviBtn -> {
-                    val intent = Intent(this, explaination_memes::class.java)
+                    val intent = Intent(this, explaination_memes::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }
                 R.id.messageNaviBtn -> {
-                    val intent = Intent(this, message_memes::class.java)
+                    val intent = Intent(this, message_memes::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }
@@ -61,7 +64,8 @@ class message_memes : AppCompatActivity(){
                     true
                 }
                 R.id.postNaviBtn -> {
-                    val intent = Intent(this, deliver::class.java)
+                    val intent = Intent(this, deliver::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }

@@ -35,22 +35,26 @@ class explaination_memes : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         postnavbtn.setOnClickListener {
-            val intent = Intent(this, deliver::class.java)
+            val intent = Intent(this, deliver::class.java).apply {
+                putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
             startActivity(intent)
         }
 
         imgbtn.setOnClickListener {
-            val intent = Intent(this, detail_meme2::class.java)
+            val intent = Intent(this, detail_meme2::class.java).apply {
+                putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
             startActivity(intent)
         }
 
         postnavbtn.setOnClickListener {
-            val intent = Intent(this, deliver::class.java)
+            val intent = Intent(this, deliver::class.java).apply {
+                putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
             startActivity(intent)
         }
 
         postnavbtn.setOnClickListener {
-            val intent = Intent(this, deliver::class.java)
+            val intent = Intent(this, deliver::class.java).apply {
+                putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
             startActivity(intent)
         }
 
@@ -58,17 +62,20 @@ class explaination_memes : AppCompatActivity() {
         navView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.homeNaviBtn -> {
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, MainActivity::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }
                 R.id.findNaviBtn -> {
-                    val intent = Intent(this, explaination_memes::class.java)
+                    val intent = Intent(this, explaination_memes::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }
                 R.id.messageNaviBtn -> {
-                    val intent = Intent(this, message_memes::class.java)
+                    val intent = Intent(this, message_memes::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }
@@ -80,7 +87,8 @@ class explaination_memes : AppCompatActivity() {
                 }
 
                 R.id.postNaviBtn -> {
-                    val intent = Intent(this, deliver::class.java)
+                    val intent = Intent(this, deliver::class.java).apply {
+                        putExtra(AlarmClock.EXTRA_MESSAGE, userName)}
                     startActivity(intent)
                     true
                 }

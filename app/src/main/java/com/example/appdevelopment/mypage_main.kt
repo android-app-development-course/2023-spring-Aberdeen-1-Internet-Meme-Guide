@@ -1,5 +1,6 @@
 package com.example.appdevelopment
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.provider.AlarmClock
@@ -20,7 +21,9 @@ class mypage_main : AppCompatActivity() {
         setContentView(R.layout.mypage_main)
         val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
         val postnavbtn = findViewById<FloatingActionButton>(R.id.postNaviBtn)
-        val userName = intent.getStringExtra(EXTRA_MESSAGE) ?: "陈哥"
+        // 读取用户名
+        val sharedPreferences = getSharedPreferences("username", Context.MODE_PRIVATE)
+        val userName = sharedPreferences.getString("username", "") // 如果不存在则返回空字符串
         val userNameTextView = findViewById<TextView>(R.id.UserName)
         userNameTextView.setText(userName)
 

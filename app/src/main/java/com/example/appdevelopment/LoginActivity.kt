@@ -1,4 +1,5 @@
 package com.example.appdevelopment
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.provider.AlarmClock.EXTRA_MESSAGE
@@ -47,8 +48,14 @@ class LoginActivity : AppCompatActivity() {
     private fun login() {
         val username = usernameEditText.text.toString()
         val password = passwordEditText.text.toString()
+        // 存储用户名
+        val sharedPreferences = getSharedPreferences("username", Context.MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.putString("username", username)
+        editor.apply()
         val intent = Intent(this, mypage_main::class.java).apply {
             putExtra(EXTRA_MESSAGE, username)}
         startActivity(intent)
     }
 }
+
