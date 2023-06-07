@@ -25,7 +25,7 @@ class mypage_collect : AppCompatActivity() {
 
         //添加数据
         val items = listOf(
-            CollectItem("一杯茶", 999,99),
+            CollectItem("一杯茶之间无数meme浮现在脑海", 999,99),
 
         )
 
